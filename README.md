@@ -832,3 +832,5 @@ Os casos omissos serão resolvidos pela Comissão de Licitação da SAAB. O foro
 ---
 
 **Observação:** Este modelo é referência técnica para o Agente_EDITAL – SAAB 5.3 e poderá ser ajustado conforme o tipo de obra e a maturidade BIM exigida.
+
+
