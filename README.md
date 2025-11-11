@@ -829,8 +829,217 @@ Os casos omissos serão resolvidos pela Comissão de Licitação da SAAB. O foro
 - Anexo IV – Minuta de Contrato com Cláusulas BIM  
 - Anexo V – Checklist CNJ nº 652/2025  
 
+
+
+# 🧾 Checklist de Auditoria e Fiscalização Contratual
+## Agente_EDITAL – SAAB 5.3 | Tribunal de Justiça do Estado de São Paulo
+
+Este checklist foi elaborado para apoiar a **fiscalização contratual** de serviços contínuos com dedicação exclusiva de mão de obra, em conformidade com a **Resolução CNJ nº 651/2025**, a **Lei nº 14.133/2021** e as **Normas Internas do TJSP**.
+
+Seu objetivo é servir como instrumento de **controle preventivo e documental**, assegurando o registro de todas as obrigações legais e contratuais, de modo a **afastar a responsabilidade subsidiária** do Tribunal em eventual demanda trabalhista.
+
+---
+
+## 🧭 1. Identificação
+- **Contrato nº:** [preencher]  
+- **Objeto:** [descrição resumida]  
+- **Unidade Gestora:** [preencher]  
+- **Empresa Contratada:** [preencher]  
+- **Fiscal do Contrato:** [preencher]  
+- **Período de Referência:** [mês/ano]
+
+---
+
+## ⚖️ 2. Verificação Documental Mensal
+
+| Item | Documento / Ação | Situação | Observações |
+|------|------------------|-----------|--------------|
+| 1 | Comprovação de pagamento de salários e benefícios | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 2 | Guia de FGTS (GFIP) quitada e comprovante bancário | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 3 | Guia de INSS (GPS) quitada e comprovante bancário | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 4 | Folha de ponto mensal assinada por todos os empregados | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 5 | Relação nominal de empregados vinculados ao contrato | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 6 | Planilha de encargos e retenções trabalhistas atualizada | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 7 | Extrato da conta vinculada com saldo e movimentações | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 8 | Anuência sindical (se aplicável) | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 9 | Comprovação de recolhimento de vale-transporte e alimentação | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+| 10 | Atualização cadastral no SEI / Painel de Governança SAAB | ☐ OK | ☐ Pendente | ☐ Não se aplica |
+
+---
+
+## 🧮 3. Controle da Conta Vinculada (Res. CNJ nº 651/2025)
+
+| Item | Procedimento | Situação | Observações |
+|------|---------------|-----------|--------------|
+| 1 | Conta vinculada aberta em banco público (até 30 dias) | ☐ OK | ☐ Pendente |
+| 2 | Retenção mensal dos encargos efetuada | ☐ OK | ☐ Pendente |
+| 3 | Solicitação de liberação registrada no SEI | ☐ OK | ☐ Pendente |
+| 4 | Análise e conferência documental realizada | ☐ OK | ☐ Pendente |
+| 5 | Autorização do ordenador de despesa registrada | ☐ OK | ☐ Pendente |
+| 6 | Liberação de valores aprovada com anuência sindical (quando exigida) | ☐ OK | ☐ Pendente |
+| 7 | Comprovação de destinação correta dos valores | ☐ OK | ☐ Pendente |
+| 8 | Arquivamento digital dos comprovantes no processo | ☐ OK | ☐ Pendente |
+
+---
+
+## 🧱 4. Verificação Técnica (Obras e BIM – CNJ nº 652/2025)
+
+| Item | Documento / Ação | Situação | Observações |
+|------|------------------|-----------|--------------|
+| 1 | Modelo BIM atualizado e revisado mensalmente | ☐ OK | ☐ Pendente |
+| 2 | Compatibilização de projetos registrada em CDE | ☐ OK | ☐ Pendente |
+| 3 | Relatórios de coordenação e simulações de riscos | ☐ OK | ☐ Pendente |
+| 4 | Cronograma físico-financeiro validado | ☐ OK | ☐ Pendente |
+| 5 | Fiscalização com acesso digital à plataforma BIM | ☐ OK | ☐ Pendente |
+| 6 | Registro de inconformidades e correções | ☐ OK | ☐ Pendente |
+| 7 | Relatório fotográfico e documental de execução | ☐ OK | ☐ Pendente |
+
+---
+
+## 🧩 5. Responsabilidade e Comunicação
+
+| Item | Ação | Responsável | Situação |
+|------|------|--------------|-----------|
+| 1 | Comunicação de irregularidades à SOF / SAAB | Fiscal do contrato | ☐ OK |
+| 2 | Notificação formal à contratada | Unidade Gestora | ☐ OK |
+| 3 | Registro de ocorrência no SEI | Fiscal / Unidade | ☐ OK |
+| 4 | Solicitação de providências corretivas | SAAB | ☐ OK |
+| 5 | Encaminhamento ao GTAJ, se necessário | SAAB / Jurídico | ☐ OK |
+
+---
+
+## 📊 6. Consolidação e Análise Final
+
+| Categoria | Percentual de Conformidade | Nível |
+|------------|-----------------------------|--------|
+| Obrigações trabalhistas e previdenciárias | [___]% | ☐ Alta ☐ Média ☐ Baixa |
+| Conta vinculada e retenções | [___]% | ☐ Alta ☐ Média ☐ Baixa |
+| Obrigações sindicais | [___]% | ☐ Alta ☐ Média ☐ Baixa |
+| Fiscalização técnica (BIM) | [___]% | ☐ Alta ☐ Média ☐ Baixa |
+| Documentação no SEI | [___]% | ☐ Alta ☐ Média ☐ Baixa |
+
+🧩 **Índice Global de Conformidade:** [___]%
+
+---
+
+## 📎 7. Assinaturas
+**Fiscal do Contrato:** ___________________________________________  
+**Unidade Gestora:** _____________________________________________  
+**SOF / SAAB:** _________________________________________________  
+**Data:** ____ / ____ / 2025
+
+---
+
+### Observações Finais
+Este checklist deve ser arquivado digitalmente no processo SEI correspondente, compondo a trilha de auditoria do contrato.  
+Seu preenchimento regular serve como **prova documental de fiscalização suficiente**, conforme entendimento consolidado do **Tribunal de Contas da União (TCU)** e do **Conselho Nacional de Justiça (CNJ)**.
+
+---
+
+**Elaboração:** SAAB / GTAJ / SOF  
+**Versão:** 2025.11.11  
+**Projeto:** SynapseNext – Agente_EDITAL SAAB 5.3 (TJSP)
+
 ---
 
 **Observação:** Este modelo é referência técnica para o Agente_EDITAL – SAAB 5.3 e poderá ser ajustado conforme o tipo de obra e a maturidade BIM exigida.
 
+
+# 🏛️ Modelo de Ato Interno de Delegação de Competências
+## Tribunal de Justiça do Estado de São Paulo – SAAB / SOF / GTAJ
+### Base normativa: Resolução CNJ nº 651/2025 | Lei nº 14.133/2021 | Provimento CSM nº 2.724/2023
+
+---
+
+## 📜 ATO NORMATIVO Nº ___/2025
+**Dispõe sobre a delegação de competências relacionadas à abertura, movimentação e controle das contas vinculadas destinadas à retenção de encargos trabalhistas e previdenciários nos contratos com dedicação exclusiva de mão de obra, no âmbito do Tribunal de Justiça do Estado de São Paulo.**
+
+---
+
+### O PRESIDENTE DO TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO,
+no uso de suas atribuições legais e regimentais, considerando o disposto na **Resolução CNJ nº 651/2025**, na **Lei nº 14.133/2021**, e no **Provimento CSM nº 2.724/2023**, resolve:
+
+---
+
+## Art. 1º – Objeto
+Fica regulamentada, no âmbito do Tribunal de Justiça do Estado de São Paulo (TJSP), a **delegação de competências** para fins de operacionalização, movimentação e controle das **contas vinculadas** previstas na Resolução CNJ nº 651/2025, aplicáveis aos contratos com dedicação exclusiva de mão de obra.
+
+---
+
+## Art. 2º – Competências Delegadas
+
+I – **À Secretaria de Orçamento e Finanças (SOF):**
+1. Proceder à **abertura e manutenção das contas vinculadas** em banco público, observando o prazo de até 30 (trinta) dias contados da assinatura do contrato;  
+2. Efetuar os **depósitos mensais dos valores retidos** a título de encargos trabalhistas e previdenciários;  
+3. Analisar os pedidos de **liberação parcial ou total dos valores**, instruindo o processo com os documentos comprobatórios;  
+4. Consolidar, trimestralmente, os saldos das contas vinculadas e reportar à SAAB e à Presidência.
+
+II – **À Secretaria de Administração e Abastecimento (SAAB):**
+1. Coordenar o processo de **solicitação de liberação dos valores**, validando a conformidade documental e a anuência sindical quando aplicável;  
+2. Manter atualizado o **painel de governança das contas vinculadas**, integrando dados de fiscalização, retenções e liberações;  
+3. Emitir parecer técnico sobre **pedidos excepcionais de reembolso ou pagamento direto**;  
+4. Zelar pela padronização dos modelos de edital e contrato, conforme a Resolução CNJ nº 651/2025.
+
+III – **À Unidade Gestora / Setor Demandante:**
+1. Instruir o processo administrativo com a documentação mensal de fiscalização contratual;  
+2. Anexar planilha analítica com a apuração dos encargos retidos e comprovantes de pagamento;  
+3. Emitir relatório técnico e solicitar a liberação dos valores à SOF/SAAB;  
+4. Comunicar irregularidades à SAAB e ao GTAJ quando houver indício de inadimplemento trabalhista.
+
+IV – **Ao Fiscal do Contrato:**
+1. Verificar mensalmente o cumprimento das obrigações trabalhistas e previdenciárias pela contratada;  
+2. Preencher o **Checklist de Fiscalização Contratual (Anexo I)**;  
+3. Registrar no SEI os comprovantes de pagamento e extratos da conta vinculada;  
+4. Atestar as medições e indicar, quando necessário, a retenção ou bloqueio de valores.
+
+V – **Ao Ordenador de Despesas:**
+1. Autorizar a liberação dos valores retidos, após manifestação favorável da SOF e da SAAB;  
+2. Determinar o pagamento direto aos trabalhadores, em caso de inadimplemento da contratada, conforme art. 5º, inciso I, da Resolução CNJ nº 651/2025;  
+3. Responsabilizar-se pela decisão final quanto à destinação dos saldos remanescentes.
+
+---
+
+## Art. 3º – Controle e Transparência
+Os processos de abertura, movimentação e liberação das contas vinculadas deverão tramitar exclusivamente pelo **Sistema Eletrônico de Informações (SEI)**, contendo toda a documentação comprobatória e o relatório consolidado de conformidade.
+
+Parágrafo único – A SAAB e a SOF manterão sistema unificado de acompanhamento das contas, com integração futura ao **Painel de Governança SAAB-TJSP**, permitindo auditoria em tempo real.
+
+---
+
+## Art. 4º – Responsabilidade Institucional
+As competências ora delegadas não eximem o ordenador de despesas de sua responsabilidade administrativa e funcional, devendo cada unidade assegurar a **fiscalização suficiente** dos contratos sob sua gestão, nos termos do art. 8º da Resolução CNJ nº 651/2025.
+
+---
+
+## Art. 5º – Vigência
+Este Ato entra em vigor na data de sua publicação, aplicando-se a todos os contratos firmados a partir de **30 de setembro de 2025**, data de início da vigência da Resolução CNJ nº 651/2025.
+
+---
+
+## Art. 6º – Revogação
+Ficam revogadas disposições em contrário, especialmente atos internos anteriores que tratem de retenções trabalhistas sem observância do modelo de conta vinculada previsto pela nova resolução.
+
+---
+
+**São Paulo, ___ de __________ de 2025.**
+
+**Desembargador [Nome do Presidente]**  
+Presidente do Tribunal de Justiça do Estado de São Paulo
+
+**Ciente:**  
+Secretaria de Administração e Abastecimento – SAAB  
+Secretaria de Orçamento e Finanças – SOF  
+Grupo Técnico de Apoio às Contratações – GTAJ  
+
+---
+
+📎 **Anexo I – Checklist de Fiscalização Contratual (versão SAAB 5.3)**  
+📎 **Anexo II – Fluxo Operacional da Conta Vinculada (Res. CNJ 651/2025)**  
+📎 **Anexo III – Minuta Padrão de Cláusulas de Retenção e Liberação**  
+
+---
+
+**Elaboração Técnica:** SAAB / SOF / GTAJ  
+**Versão:** 2025.11.11  
+**Projeto:** SynapseNext – Agente_EDITAL SAAB 5.3 (TJSP)
 
