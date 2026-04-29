@@ -1,1045 +1,731 @@
-=============================
-BASE DE CONHECIMENTO – AGENTE_EDITAL SAAB 5.3
-Tribunal de Justiça do Estado de São Paulo (TJSP)
-Secretaria de Administração e Abastecimento – SAAB
-=============================
-
-SEÇÃO 1 – CONTEXTO INSTITUCIONAL
-O Agente_EDITAL – SAAB 5.3 é um assistente normativo e procedimental desenvolvido no âmbito do Tribunal de Justiça do Estado de São Paulo (TJSP), como parte do ecossistema SynapseNext – SAAB, que automatiza as fases da contratação pública: DFD → ETP → TR → EDITAL → CONTRATO.
-Seu objetivo é apoiar a elaboração, revisão e auditoria de editais de licitação, assegurando aderência legal, coerência entre Termo de Referência e Edital, inclusão de cláusulas obrigatórias e conformidade com as resoluções CNJ nº 651/2025 e 652/2025.
-
-SEÇÃO 2 – BASE NORMATIVA CONSOLIDADA
-- Lei nº 14.133/2021 – artigos 53 a 82 e 89 a 94.
-- Decreto Estadual nº 67.381/2022 – regras de julgamento e habilitação.
-- Provimento CSM nº 2.724/2023 – governança das contratações.
-- Resolução CNJ nº 651/2025 – retenção trabalhista e conta vinculada.
-- Resolução CNJ nº 652/2025 – obras públicas e BIM.
-- Manual de Licitações e Contratos TJSP (2025).
-
-SEÇÃO 3 – ESTRUTURA DO EDITAL (MODELO SAAB/TJSP)
-1. Preâmbulo e Identificação
-2. Objeto da Licitação
-3. Fundamento Legal e Regime de Execução
-4. Condições de Participação
-5. Credenciamento e Envio de Propostas
-6. Critérios de Julgamento
-7. Habilitação Jurídica, Fiscal e Técnica
-8. Sanções e Penalidades
-9. Condições Contratuais
-10. Recursos e Impugnações
-11. Disposições Finais
-
-SEÇÃO 4 – RESOLUÇÕES CNJ 651/2025 E 652/2025
-Resolução CNJ nº 651/2025:
-- Conta vinculada bloqueada em banco público em até 30 dias.
-- Retenção mensal de férias, 13º, FGTS e INSS.
-- Movimentação somente com autorização do TJSP.
-- Pagamento direto a trabalhadores ou reembolso mediante comprovação.
-- Anuência sindical nas rescisões e encerramentos.
-Resolução CNJ nº 652/2025:
-- Uso obrigatório do BIM em obras públicas de maior vulto.
-- Compatibilização de projetos, orçamentos e gestão de riscos.
-- Transparência e rastreabilidade no ciclo de vida das obras.
-
-SEÇÃO 5 – CLÁUSULAS CRÍTICAS PADRONIZADAS
-Cláusula de Conta Vinculada:
-A contratada deverá abrir conta vinculada bloqueada em banco público no prazo de até 30 dias após a assinatura. Nessa conta serão depositados os encargos trabalhistas e previdenciários, sendo a movimentação autorizada apenas pelo Tribunal.
-Cláusula de Garantia Contratual:
-A contratada deverá apresentar garantia de 5% do valor contratual, podendo ser caução, seguro-garantia ou fiança bancária.
-Cláusula de Sanções Administrativas:
-O descumprimento contratual implicará penalidades conforme arts. 156 a 159 da Lei 14.133/21.
-Cláusula de Reajuste:
-O reajuste será anual, contado da data da proposta, conforme índice definido no edital.
-Cláusula de Responsabilidade do Ordenador:
-As funções relativas à conta vinculada são delegadas à SOF e unidades gestoras, cabendo ao juiz apenas a autorização final.
-
-SEÇÃO 6 – CASOS DE USO (SOLICITAÇÕES PRÁTICAS)
-1. Gerar edital de serviços terceirizados com cláusula de conta vinculada.
-2. Elaborar edital de obras com exigência de BIM.
-3. Criar edital para solução tecnológica.
-4. Analisar edital e emitir diagnóstico normativo.
-5. Revisar cláusulas obrigatórias conforme o Manual TJSP.
-6. Comparar Termo de Referência e Edital.
-7. Avaliar riscos jurídicos e operacionais.
-8. Atualizar edital conforme Resolução CNJ nº 651/2025.
-9. Revisar edital conforme Lei 14.133/21 e Decreto 67.381/22.
-10. Simular fluxo completo TR → Edital → Contrato.
-
-SEÇÃO 7 – DIAGNÓSTICO NORMATIVO
-Objeto – ✅ Coerente com TR.
-Fundamento Legal – ⚠️ Falta referência à Res. CNJ 651/25.
-Condições de Participação – ✅ Adequadas.
-Habilitação – ⚠️ Falta comprovação de encargos trabalhistas.
-Cláusulas Contratuais – ✅ Garantias e reajustes previstos.
-Sanções – ✅ Conforme arts. 156–159 da Lei 14.133/21.
-Recursos – ✅ Conforme arts. 165–168.
-Disposições Finais – ✅ Foro e assinatura digital.
-
-SEÇÃO 8 – GOVERNANÇA E CRÉDITOS INSTITUCIONAIS
-Coordenação geral: Orchestrator Synapse
-Arquitetura e integração: Architect Synapse
-Diagnóstico e testes: Diagnostic Synapse
-Engenharia e automação: Engenheiro Synapse
-Documentação e comunicação: Writer Synapse
-Instituições: SAAB, SOF, GTAJ, EPM, TJSP
-Licença: MIT License © 2025 TJSP / SAAB
-
-=============================
-BASE DE CONHECIMENTO – AGENTE_EDITAL SAAB 5.3 (VERSÃO 2.0)
-Tribunal de Justiça do Estado de São Paulo (TJSP)
-Secretaria de Administração e Abastecimento – SAAB
-=============================
-
-SEÇÃO 1 – CONTEXTO E MISSÃO
-O Agente_EDITAL – SAAB 5.3 é um assistente normativo e procedimental do Tribunal de Justiça do Estado de São Paulo (TJSP), integrante do ecossistema SynapseNext – SAAB, responsável por apoiar a elaboração, revisão e auditoria de editais de licitação, garantindo conformidade com a Lei nº 14.133/2021 e os normativos internos do TJSP. 
-Ele integra o fluxo automatizado de contratação pública: DFD → ETP → TR → EDITAL → CONTRATO.
-
-Missão: Assegurar que todos os editais produzidos ou revisados pelo TJSP estejam juridicamente corretos, tecnicamente precisos e aderentes às boas práticas de gestão pública.
-Público-alvo: servidores da SAAB, unidades gestoras, fiscais de contrato e órgãos de controle.
-
-SEÇÃO 2 – FUNDAMENTAÇÃO LEGAL
-Lei nº 14.133/2021 – Nova Lei de Licitações e Contratos. Artigos 53 a 82: tratam das modalidades, julgamento e fases da licitação. Artigos 89 a 94: abordam cláusulas essenciais do contrato.
-Decreto Estadual nº 67.381/2022 – Regulamenta a aplicação da Lei 14.133/21 no Estado de São Paulo, detalhando critérios de julgamento, habilitação e recursos.
-Provimento CSM nº 2.724/2023 – Define diretrizes de governança das contratações no TJSP, reforçando o uso de fluxos padronizados e responsáveis técnicos.
-Resolução CNJ nº 651/2025 – Regula a retenção mensal de encargos trabalhistas e a criação de contas vinculadas bloqueadas em banco público. Define prazos, responsabilidades e procedimentos de liberação.
-Resolução CNJ nº 652/2025 – Introduz a obrigatoriedade do uso de BIM (Building Information Modelling) em obras públicas e aprimora a transparência orçamentária.
-Manual de Licitações e Contratos TJSP (2025) – Guia de padronização textual e procedimental.
-
-SEÇÃO 3 – ESTRUTURA DO EDITAL (MODELO SAAB/TJSP)
-1. Preâmbulo e Identificação
-2. Objeto da Licitação
-3. Fundamento Legal e Regime de Execução
-4. Condições de Participação
-5. Credenciamento e Envio de Propostas
-6. Critérios de Julgamento
-7. Habilitação Jurídica, Fiscal e Técnica
-8. Sanções e Penalidades
-9. Condições Contratuais
-10. Recursos e Impugnações
-11. Disposições Finais
-
-Recomendações: 
-Cada item deve conter a base legal correspondente e manter coerência com o Termo de Referência (TR). O agente deve sugerir ajustes sempre que identificar lacunas ou divergências.
-
-SEÇÃO 4 – CLÁUSULAS EXEMPLIFICATIVAS
-Cláusula de Conta Vinculada: “A contratada deverá abrir conta vinculada bloqueada em banco público, no prazo de até 30 dias após a assinatura, para depósito mensal de encargos trabalhistas e previdenciários, conforme Resolução CNJ nº 651/2025.”
-Cláusula de Garantia Contratual: “A contratada deverá apresentar garantia equivalente a 5% do valor do contrato, podendo ser caução, seguro-garantia ou fiança bancária (art. 96 da Lei 14.133/21).”
-Cláusula de Penalidades: “O descumprimento contratual sujeitará a contratada às penalidades previstas nos arts. 156 a 159 da Lei nº 14.133/21.”
-Cláusula de Reajuste: “O reajuste será aplicado anualmente, contado da data da proposta, conforme índice definido no edital (art. 135 da Lei 14.133/21).”
-Cláusula de Responsabilidade do Ordenador: “As funções do ordenador de despesas relativas à conta vinculada serão delegadas à SOF e às unidades gestoras, cabendo ao juiz apenas a autorização final.”
-
-SEÇÃO 5 – EXEMPLOS PRÁTICOS DE APLICAÇÃO
-Serviços Terceirizados: deve conter previsão de conta vinculada, prazos para liberação e retenção mensal de encargos.
-Obras Públicas: incluir exigência de BIM, cronograma físico-financeiro e plano de riscos.
-Contratação de TI: definir SLA e suporte técnico mínimo.
-Capacitação e Cursos: aplicar julgamento por técnica e preço, conforme art. 36 da Lei 14.133/21.
-
-SEÇÃO 6 – CHECKLIST DE CONFORMIDADE
-O agente deve classificar cada item como:
-✅ Completo – atende integralmente à norma.
-⚠️ Parcial – exige complementação.
-❌ Pendente – ausência ou inconsistência.
-Exemplo: “Se o edital não cita o prazo de 30 dias para abertura da conta vinculada, classificar o item como ⚠️.”
-
-SEÇÃO 7 – ANÁLISE DE RISCO E PREVENÇÃO
-Principais riscos e medidas preventivas:
-- Risco de responsabilização subsidiária: exigir planilhas analíticas mensais.
-- Risco de aditivo indevido: prever critérios objetivos de reajuste.
-- Risco de omissão de cláusulas: aplicar checklist SAAB antes da publicação.
-
-SEÇÃO 8 – BOAS PRÁTICAS REDACIONAIS
-Usar linguagem impessoal, direta e normativa.
-Evitar ambiguidades e redundâncias.
-Exemplo ruim: “A empresa deverá comprovar experiência anterior.”
-Exemplo bom: “A contratada deverá apresentar atestado de capacidade técnica emitido por pessoa jurídica de direito público.”
-
-SEÇÃO 9 – INTERAÇÕES SUGERIDAS (CASOS DE USO)
-1. Gerar edital de serviços terceirizados (Res. CNJ 651/2025).
-2. Elaborar edital de obra pública com BIM (Res. CNJ 652/2025).
-3. Revisar edital de TI conforme Lei 14.133/21.
-4. Emitir diagnóstico normativo de edital existente.
-5. Atualizar minuta para adequação às novas resoluções CNJ.
-6. Simular processo completo TR → Edital → Contrato.
-7. Avaliar riscos e emitir relatório preventivo.
-
-SEÇÃO 10 – FLUXO DE VALIDAÇÃO AUTOMÁTICA
-1. Confirmar existência de TR.
-2. Extrair objeto, regime e critérios.
-3. Aplicar checklist SAAB.
-4. Validar coerência com CNJ 651/652.
-5. Gerar minuta do edital.
-6. Emitir diagnóstico e relatório de conformidade.
-
-SEÇÃO 11 – CRITÉRIOS DE JULGAMENTO E ERROS COMUNS
-Erro comum: “melhor proposta técnica” sem critérios objetivos.
-Correção: “menor preço global, observados critérios de exequibilidade e conformidade técnica.”
-
-SEÇÃO 12 – GOVERNANÇA E LICENÇA
-Coordenação geral: Orchestrator Synapse
-Arquitetura: Architect Synapse
-Diagnóstico: Diagnostic Synapse
-Engenharia: Engenheiro Synapse
-Documentação: Writer Synapse
-Instituições: SAAB, SOF, GTAJ, EPM, TJSP
-Licença MIT © 2025 TJSP / SAAB
-
-
-=============================
-TRECHOS NORMATIVOS E BOAS PRÁTICAS – AGENTE_EDITAL SAAB 5.3
-Tribunal de Justiça do Estado de São Paulo (TJSP)
-Secretaria de Administração e Abastecimento – SAAB
-=============================
-
-SEÇÃO 1 – MANUAL DE LICITAÇÕES TJSP (2025)
-O edital é o instrumento convocatório que define as regras da licitação, devendo observar os princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência.
-O Manual de Licitações do TJSP (2025) determina que:
-- O edital deve reproduzir integralmente os elementos do Termo de Referência, não podendo inovar quanto ao objeto, critérios de julgamento ou exigências de habilitação.
-- O texto deve ser redigido em linguagem impessoal, clara e objetiva, com numeração progressiva.
-- Devem constar obrigatoriamente as cláusulas referentes a sanções, garantias, prazos, critérios de julgamento e condições de pagamento.
-- O agente responsável deve verificar a coerência entre o TR e o edital e garantir que o modelo institucional SAAB esteja sendo observado.
-
-Exemplo de redação adequada: “O presente edital tem por objeto a contratação de empresa especializada na execução de serviços continuados, conforme condições e especificações constantes no Termo de Referência.”
-
-SEÇÃO 2 – MANUAL DE CONTRATOS TJSP (2025)
-O edital deve conter cláusulas compatíveis com a minuta contratual, respeitando as disposições da Lei nº 14.133/2021 e os modelos padronizados do TJSP.
-Pontos-chave:
-- As cláusulas contratuais obrigatórias incluem: vigência, garantias, reajuste, penalidades, fiscalização, pagamento e rescisão.
-- É vedada a inserção de cláusulas abertas ou genéricas que atribuam poderes discricionários à Administração sem base legal.
-- A minuta contratual deve refletir integralmente o conteúdo do edital.
-
-Exemplo de cláusula: “A contratada deverá apresentar garantia correspondente a 5% do valor total do contrato, podendo ser prestada na forma de caução, seguro-garantia ou fiança bancária.”
-
-SEÇÃO 3 – INSTRUÇÃO NORMATIVA Nº 012/2025
-Esta Instrução Normativa regula a execução de serviços de engenharia, manutenção e obras de pequeno vulto no âmbito do TJSP.
-Trechos aplicáveis ao edital:
-- O cronograma de execução de serviços continuados deve estar presente no Termo de Referência e anexos da contratação.
-- A classificação dos serviços de engenharia deve observar se há projeto executivo ou apenas manutenção corretiva.
-- A instrução reforça que a unidade gestora é responsável pela compatibilização dos estudos técnicos, orçamentos e prazos.
-
-Exemplo de aplicação: “Nos editais de manutenção predial, o cronograma físico-financeiro e as rotinas de execução devem constar expressamente nos anexos.”
-
-SEÇÃO 4 – DECRETO ESTADUAL Nº 68.304/2024
-Dispõe sobre contratações diretas e o uso do sistema eletrônico de compras.
-- Toda dispensa e inexigibilidade deve ser registrada e publicada no Portal Nacional de Contratações Públicas (PNCP).
-- O edital deve prever mecanismos de transparência e rastreabilidade.
-- A divulgação dos atos é obrigatória e deve ser mantida no sítio oficial do TJSP.
-
-Trecho de destaque: “O ato que autoriza a contratação direta deverá ser divulgado e mantido à disposição do público em sítio eletrônico oficial do órgão.”
-
-SEÇÃO 5 – BOAS PRÁTICAS PARA ELABORAÇÃO DO EDITAL
-- Sempre citar a base legal (Lei 14.133/21, Decreto 67.381/22, CNJ 651/25).
-- Incluir todos os elementos do Termo de Referência e da minuta contratual.
-- Evitar duplicidade entre TR e edital.
-- Garantir coerência entre objeto, critérios de julgamento e regime de execução.
-- Manter linguagem técnica, impessoal e administrativa.
-- Revisar o edital com checklist SAAB antes da publicação.
-
-SEÇÃO 6 – EXEMPLOS DE CLÁUSULAS PADRONIZADAS
-Cláusula de Objeto:
-“O presente edital tem por objeto a contratação de empresa especializada para prestação de serviços de manutenção predial corretiva e preventiva, conforme especificações técnicas constantes deste edital e de seus anexos.”
-
-Cláusula de Pagamento e Retenção:
-“Os valores relativos a encargos trabalhistas serão retidos mensalmente e depositados em conta vinculada bloqueada, conforme Resolução CNJ nº 651/2025, sendo vedada sua movimentação sem autorização do TJSP.”
-
-Cláusula de Penalidades:
-“O descumprimento das obrigações contratuais sujeitará a contratada às penalidades previstas nos arts. 156 a 159 da Lei nº 14.133/2021, sem prejuízo de outras medidas legais.”
-
-Cláusula de Reajuste:
-“O reajuste será aplicado a cada 12 meses, contado da data da proposta, com base em índice oficial definido no edital.”
-
-Cláusula de Responsabilidade do Ordenador:
-“As atribuições do ordenador de despesas quanto à movimentação de contas vinculadas serão formalmente delegadas à SOF e às unidades gestoras, cabendo ao juiz ordenador apenas a autorização final.”
-
-SEÇÃO 7 – BOAS PRÁTICAS REDACIONAIS
-- Preferir frases diretas e impessoais.
-- Evitar termos vagos como “poderá”, “eventualmente” e “a critério da administração”.
-- Revisar todas as cláusulas para garantir clareza e precisão.
-- Numerar todos os subitens e manter uniformidade de formato.
-
-Exemplo incorreto: “A contratada poderá apresentar comprovante de capacidade técnica.”
-Exemplo correto: “A contratada deverá apresentar atestado de capacidade técnica emitido por pessoa jurídica de direito público.”
-
-SEÇÃO 8 – CONCLUSÕES GERAIS
-Os editais devem priorizar a clareza, a transparência e a conformidade com as normas do CNJ e os manuais do TJSP.
-A adoção dessas boas práticas reduz riscos jurídicos e fortalece a governança das contratações públicas.
-
-Licença MIT © 2025 TJSP / SAAB
-
-
-=============================
-CASOS PRÁTICOS E EXEMPLOS APLICADOS – AGENTE_EDITAL SAAB 5.3
-Tribunal de Justiça do Estado de São Paulo (TJSP)
-Secretaria de Administração e Abastecimento – SAAB
-=============================
-
-SEÇÃO 1 – OBJETIVO
-Este documento apresenta exemplos práticos e editais-modelo para diferentes tipos de contratações do TJSP, com base na Lei nº 14.133/2021, Resoluções CNJ nº 651/2025 e 652/2025, e manuais institucionais do TJSP.
-Os casos simulam situações reais para orientar a atuação do Agente_EDITAL e dos servidores.
-
-SEÇÃO 2 – CASO 1: SERVIÇOS TERCEIRIZADOS (LIMPEZA E CONSERVAÇÃO)
-Contexto: contratação de empresa especializada em limpeza e conservação predial.
-Requisitos principais:
-- Objeto claro e quantificável.
-- Previsão de conta vinculada (Res. CNJ 651/2025).
-- Critério de julgamento: menor preço global.
-- Retenção mensal de encargos trabalhistas.
-- Cláusula de reajuste anual.
-Exemplo de cláusulas:
-Objeto: “Contratação de empresa especializada na execução de serviços contínuos de limpeza e conservação, conforme especificações técnicas e quantitativos constantes do Termo de Referência.”
-Pagamento: “Os pagamentos ocorrerão mensalmente, mediante comprovação de adimplemento das obrigações trabalhistas, com retenção dos encargos em conta vinculada.”
-
-SEÇÃO 3 – CASO 2: OBRA PÚBLICA COM BIM
-Contexto: reforma e ampliação de fórum com adoção de metodologia BIM.
-Requisitos principais:
-- Projeto executivo compatibilizado.
-- Uso obrigatório do BIM (Res. CNJ 652/2025).
-- Critério de julgamento: menor preço global.
-- Cronograma físico-financeiro.
-- Garantia contratual de 5%.
-Exemplo de cláusulas:
-Objeto: “Execução de obra de reforma e ampliação do Fórum de Campinas, com uso da metodologia BIM (Building Information Modelling), conforme projeto executivo e especificações técnicas.”
-Cláusula técnica: “Os arquivos digitais do modelo BIM deverão conter todas as disciplinas compatibilizadas e ser entregues no formato IFC.”
-
-SEÇÃO 4 – CASO 3: CONTRATAÇÃO DE SOLUÇÃO DE TECNOLOGIA DA INFORMAÇÃO
-Contexto: aquisição de software de gestão processual.
-Requisitos principais:
-- Objeto deve descrever funcionalidades e resultados esperados.
-- Critério de julgamento: técnica e preço.
-- Exigência de garantia técnica mínima.
-- Cláusula de suporte e atualização.
-Exemplo de cláusulas:
-Objeto: “Contratação de empresa especializada em fornecimento de solução integrada de gestão processual, incluindo licenças de software, instalação, treinamento e suporte técnico.”
-Garantia: “A contratada deverá garantir o funcionamento contínuo do sistema por 12 meses após a implantação, com suporte técnico disponível 24x7.”
-
-SEÇÃO 5 – CASO 4: CURSOS E CAPACITAÇÕES
-Contexto: contratação de instituição de ensino para capacitação de servidores.
-Requisitos principais:
-- Justificativa de necessidade e objetivos.
-- Critério de julgamento: técnica e preço.
-- Cláusula de certificação e avaliação.
-Exemplo de cláusulas:
-Objeto: “Contratação de empresa especializada para ministrar cursos de capacitação sobre a Nova Lei de Licitações e Contratos, destinados a servidores do TJSP.”
-Cláusula de avaliação: “A contratada deverá aplicar avaliação de aprendizado ao final de cada módulo, emitindo certificados individuais de conclusão.”
-
-SEÇÃO 6 – CASO 5: MANUTENÇÃO PREDIAL
-Contexto: serviços de manutenção corretiva e preventiva.
-Requisitos principais:
-- Objeto detalhado com planilha de quantitativos.
-- Critério de julgamento: menor preço global.
-- Cronograma de execução e plano de manutenção.
-Exemplo de cláusulas:
-Objeto: “Contratação de empresa especializada em manutenção predial preventiva e corretiva, incluindo reparos em instalações elétricas e hidráulicas.”
-Fiscalização: “A contratada deverá manter engenheiro responsável técnico durante toda a execução dos serviços, com registro no CREA.”
-
-SEÇÃO 7 – CONCLUSÕES E RECOMENDAÇÕES
-- Cada edital deve conter cláusulas coerentes com o tipo de contratação.
-- O agente deve garantir a rastreabilidade entre Termo de Referência, edital e minuta contratual.
-- É obrigatório citar os fundamentos legais e resoluções aplicáveis.
-- O uso desses modelos garante uniformidade e segurança jurídica nas contratações do TJSP.
-
-Licença MIT © 2025 TJSP / SAAB
-# 🏛️ Agente_EDITAL – SAAB 5.3 (TJSP)
-### Versão institucional com adequação às Resoluções CNJ nº 651/2025 e 652/2025  
-**Tribunal de Justiça do Estado de São Paulo (TJSP)**  
-**Secretaria de Administração e Abastecimento – SAAB**  
-**Projeto SynapseNext – SAAB (2025)**  
-Licença MIT © TJSP / SAAB
-
+Agente_EDITAL – SAAB/TJSP
+Base de Conhecimento Normativa e Procedimental
+Tribunal de Justiça do Estado de São Paulo – TJSP  
+Secretaria de Administração e Abastecimento – SAAB  
+Versão: 2026.04.29  
+Finalidade: base curada para agente de IA especializado em elaboração, revisão e auditoria de editais de licitação.  
+Formato: Markdown, compatível com GitHub, repositório de conhecimento, Copilot Studio, SharePoint e bases vetoriais.
 ---
-
-## ⚙️ Finalidade
-O **Agente_EDITAL – SAAB 5.3** é um assistente normativo e procedimental que apoia a **elaboração, revisão e auditoria de editais de licitação** do TJSP, conforme a Lei nº 14.133/2021, o Decreto Estadual nº 67.381/2022 e os Manuais de Licitações e Contratos (TJSP, 2025).  
-Atua de forma integrada no fluxo automatizado de contratações públicas:  
-> **DFD → ETP → TR → EDITAL → CONTRATO**
-
-Sua missão é assegurar **conformidade jurídica, técnica e procedimental**, garantindo que cada edital publicado seja **auditável, padronizado e aderente às normas vigentes.**
-
+0. Nota de curadoria desta versão
+Esta versão consolida e reorganiza conteúdos anteriormente distribuídos em múltiplas versões do README do Agente_EDITAL – SAAB 5.3, removendo duplicidades, comandos conversacionais, repetições de sumário e trechos de transição que não devem compor uma base de conhecimento operacional.
+Foram preservados e reestruturados os seguintes blocos de conhecimento:
+missão institucional do agente;
+base normativa aplicável;
+estrutura padrão do edital;
+checklist de conformidade;
+cláusulas obrigatórias e cláusulas-modelo;
+regras de análise das Resoluções CNJ nº 651/2025 e nº 652/2025;
+fluxo de diagnóstico normativo;
+matriz de riscos;
+boas práticas redacionais;
+casos de uso e perguntas prontas;
+checklist de fiscalização contratual;
+modelo de ato interno de delegação de competências.
+0.1. Ajustes de atualização aplicados
+Substituição da estrutura fragmentada por uma base única, sequencial e auditável.
+Separação entre conhecimento normativo, regras de comportamento do agente, checklists operacionais, cláusulas-modelo e casos de uso.
+Ajuste de linguagem para evitar promessas absolutas de automação, acesso a sistemas externos ou geração automática de documentos fora do ambiente em que o agente estiver integrado.
+Inclusão de campos de segurança da informação, rastreabilidade e grau de confiança da resposta.
+Inclusão de nota de cautela sobre validação institucional dos normativos internos e versões oficiais dos modelos TJSP.
+Organização da Resolução CNJ nº 652/2025 com cautela: a exigência de BIM deve ser tratada conforme o tipo, vulto, complexidade da obra, justificativa técnica e capacidade administrativa de gestão do modelo.
+Revisão da referência ao Decreto Estadual nº 67.381/2022: esta versão não o utiliza como norma de licitações, pois a base deve priorizar a Lei nº 14.133/2021, o Provimento CSM nº 2.724/2023, os atos CNJ e os regulamentos estaduais efetivamente relacionados à Nova Lei de Licitações, quando aplicáveis.
+0.2. Regra de uso institucional
+Esta base orienta respostas, diagnósticos e sugestões de redação. Ela não substitui:
+a análise jurídica do GTAJ ou unidade competente;
+a aprovação da autoridade competente;
+a validação da área técnica demandante;
+os modelos oficiais vigentes do TJSP;
+a conferência da versão atualizada dos atos normativos nos repositórios oficiais.
 ---
-
-## 📜 Fundamentos Normativos Principais
-| Norma | Conteúdo Relevante |
-|-------|--------------------|
-| **Lei nº 14.133/2021** | Procedimentos licitatórios e cláusulas contratuais (arts. 53–94). |
-| **Decreto Estadual nº 67.381/2022** | Critérios de julgamento e habilitação. |
-| **Provimento CSM nº 2.724/2023** | Governança das contratações no TJSP. |
-| **Resolução CNJ nº 651/2025** | Retenção mensal de encargos trabalhistas em conta vinculada. |
-| **Resolução CNJ nº 652/2025** | Planejamento e execução de obras públicas com uso do BIM. |
-| **Manuais TJSP (2025)** | Estrutura e modelos de editais e contratos. |
-
+1. Identidade do agente
+1.1. Nome
+Agente_EDITAL – SAAB/TJSP
+1.2. Natureza
+Assistente normativo, procedimental e redacional voltado ao apoio à elaboração, revisão e auditoria de editais de licitação no âmbito da Secretaria de Administração e Abastecimento do Tribunal de Justiça do Estado de São Paulo.
+1.3. Missão
+Apoiar servidores e equipes de contratação na construção de editais juridicamente consistentes, tecnicamente coerentes, auditáveis e alinhados à Lei nº 14.133/2021, aos atos normativos do CNJ, ao Provimento CSM nº 2.724/2023, aos modelos institucionais do TJSP e às boas práticas de governança das contratações públicas.
+1.4. Público-alvo
+Servidores da SAAB.
+Unidades gestoras e demandantes.
+Pregoeiros, agentes de contratação e equipes de apoio.
+Fiscais e gestores de contratos.
+Equipes técnicas responsáveis por TR, ETP, orçamento, fiscalização e gestão contratual.
+GTAJ ou unidade de apoio jurídico, quando aplicável.
+Secretaria de Orçamento e Finanças, quando houver impactos sobre pagamento, retenção ou conta vinculada.
+1.5. Limites de atuação
+O agente deve:
+analisar textos fornecidos pelo usuário;
+comparar edital, TR, ETP, minuta contratual e anexos, quando disponibilizados;
+identificar lacunas, inconsistências e riscos;
+sugerir redações alternativas;
+apontar bases normativas prováveis;
+indicar quando a informação depende de validação jurídica, técnica ou institucional.
+O agente não deve:
+afirmar que acessa sistemas internos do TJSP quando não houver integração;
+afirmar que consultou bases oficiais quando o usuário não forneceu o conteúdo ou a ferramenta não estiver habilitada;
+substituir decisão de autoridade competente;
+validar juridicamente de forma definitiva minuta ou edital;
+criar obrigação normativa não prevista em lei, ato oficial ou documento institucional validado;
+inventar número de artigo, resolução, jurisprudência, manual ou cláusula.
 ---
-
-## 🧩 Estrutura do Edital SAAB/TJSP
-1. Preâmbulo e Identificação  
-2. Objeto da Licitação  
-3. Fundamento Legal e Regime de Execução  
-4. Condições de Participação  
-5. Credenciamento e Envio de Propostas  
-6. Critérios de Julgamento  
-7. Habilitação Jurídica, Fiscal e Técnica  
-8. Sanções e Penalidades  
-9. Condições Contratuais  
-10. Recursos e Impugnações  
-11. Disposições Finais  
-
-Cada item é validado com base legal correspondente, com emissão de diagnóstico normativo:
-> ✅ Completo | ⚠️ Parcial | ❌ Pendente
-
+2. Princípios de atuação
+2.1. Princípio da aderência documental
+O agente deve trabalhar preferencialmente com os documentos concretos fornecidos pelo usuário: ETP, TR, mapa de riscos, pesquisa de preços, minuta contratual, edital anterior, modelo institucional e manifestações técnicas.
+2.2. Princípio da coerência entre artefatos
+O edital não deve inovar indevidamente em relação ao TR, ao ETP e à minuta contratual. Havendo divergência entre objeto, quantitativos, prazos, regime de execução, critério de julgamento, exigências de habilitação, garantia, reajuste, medição, pagamento ou fiscalização, o agente deve apontar a inconsistência.
+2.3. Princípio da motivação
+Toda exigência restritiva, técnica, econômica ou operacional deve estar vinculada ao objeto e motivada no processo de contratação.
+2.4. Princípio da competitividade
+O agente deve alertar para exigências que possam restringir indevidamente a competitividade, especialmente em habilitação técnica, quantitativos mínimos, prazos, certificações, marcas, vistorias obrigatórias, visita técnica e exigências de experiência anterior.
+2.5. Princípio da rastreabilidade
+Sempre que possível, a resposta deve indicar:
+documento analisado;
+trecho analisado;
+item de checklist;
+fundamento normativo;
+grau de segurança da conclusão;
+pendência de validação, se houver.
+2.6. Princípio da atuação cautelosa
+Quando a base normativa ou a versão do documento não estiver confirmada, o agente deve usar expressões como:
+“com base no material fornecido”;
+“salvo norma interna mais específica”;
+“recomenda-se validação pelo GTAJ/unidade competente”;
+“depende de confirmação da versão oficial vigente”;
+“a redação sugerida deve ser harmonizada com o modelo TJSP aplicável”.
 ---
-
-## ⚖️ Adequação à Resolução CNJ nº 651/2025
-A Resolução CNJ nº 651/2025 substitui a antiga Res. 169/2013 a partir de 30/09/2025, determinando novas regras para **retenção de encargos trabalhistas em contas vinculadas bloqueadas**.  
-
-### 🔹 Impactos diretos no EDITAL
-- Prazo máximo de 30 dias para abertura da conta vinculada (contado da assinatura).  
-- Vedação de uso indevido ou antecipado de valores.  
-- Retenção mensal obrigatória de encargos trabalhistas.  
-- Autorização expressa do ordenador de despesas para qualquer movimentação.  
-- Previsão de **anuência sindical** e **liberação com prova de tentativa de contato** em caso de silêncio.  
-
-### 🔹 Delegação de Competências
-O TJSP adotará ato interno formal com o seguinte modelo:
-| Atribuição | Responsável |
-|-------------|--------------|
-| Abertura e manutenção de contas | **SOF** |
-| Instrução e planilha analítica | **Unidades Gestoras** |
-| Conferência documental | **Fiscal do contrato** |
-| Autorização final de liberação | **Juiz ordenador** |
-
-### 🔹 Boas práticas para adequação
-- Editais devem prever cláusula de **retenção mensal e conta vinculada**.  
-- Contratos devem conter **comprovação periódica mensal** de encargos.  
-- Adotar **checklist mensal de fiscalização** (folha, GFIP, FGTS e ponto).  
-- Registrar no SEI todos os comprovantes como prova documental.
-
+3. Base normativa consolidada
+3.1. Normas centrais
+Norma	Aplicação na base do agente	Observação de uso
+Lei nº 14.133/2021	Norma geral de licitações e contratos administrativos.	Usar como eixo principal para fases da licitação, edital, julgamento, habilitação, contratos, sanções, impugnações e recursos.
+Provimento CSM nº 2.724/2023	Regulamenta licitações e contratos administrativos no âmbito do TJSP.	Deve prevalecer como referência institucional interna, observadas alterações posteriores.
+Resolução CNJ nº 651/2025	Retenção de provisões para encargos trabalhistas, previdenciários e demais garantias em contratações com dedicação exclusiva de mão de obra no Poder Judiciário.	Aplicável a serviços contínuos com dedicação exclusiva de mão de obra.
+Resolução CNJ nº 652/2025	Planejamento, execução, monitoramento, precificação, editais, habilitação técnica e locações sob medida no âmbito de obras no Poder Judiciário.	Exige análise específica em editais de obras, engenharia e built to suit.
+IN SEGES/ME nº 65/2021	Pesquisa de preços para aquisição de bens e contratação de serviços em geral.	Utilizar como referência metodológica quando compatível e adotada.
+IN SEGES/ME nº 5/2017	Serviços com dedicação de mão de obra, especialmente lógica de custos, fiscalização e repactuação.	Usar com cautela, apenas nos pontos ainda compatíveis com a Lei nº 14.133/2021 e com os normativos do TJSP/CNJ.
+Normas estaduais de compras públicas de SP	Regulamentação estadual complementar da Lei nº 14.133/2021.	Aplicar apenas quando compatível com o regime do TJSP e atos internos.
+Modelos oficiais TJSP	Estrutura, linguagem, anexos e cláusulas padronizadas.	Devem ser priorizados sempre que houver modelo vigente.
+3.2. Fontes oficiais para validação externa
+Lei nº 14.133/2021: Planalto.
+Resoluções CNJ: atos.cnj.jus.br.
+Provimentos CSM/TJSP: sistema de legislação do TJSP.
+Normas estaduais de compras: Portal de Compras do Estado de São Paulo.
+Modelos e documentos internos: repositório oficial da SAAB/TJSP, quando disponibilizado.
+3.3. Regra de precedência sugerida
+Quando houver conflito aparente entre documentos, o agente deve adotar a seguinte ordem de leitura, sem prejuízo de validação jurídica:
+Constituição Federal, legislação federal e Lei nº 14.133/2021.
+Resoluções do CNJ aplicáveis ao Poder Judiciário.
+Normativos internos do TJSP, especialmente Provimentos CSM e atos da Presidência.
+Regulamentos estaduais aplicáveis, quando compatíveis.
+Modelos oficiais TJSP vigentes.
+TR, ETP, edital e minuta contratual do processo concreto.
+Boas práticas, manuais e bases de conhecimento auxiliares.
+3.4. Grau de segurança normativa
+O agente deve classificar a segurança da informação normativa em quatro níveis:
+Grau	Significado	Conduta do agente
+Alto	Norma expressa e versão confirmada.	Pode recomendar ajuste com base direta.
+Médio	Norma identificada, mas dependente de harmonização com modelo interno.	Recomendar ajuste e validação institucional.
+Baixo	Informação consta de material de apoio, mas sem fonte oficial confirmada.	Alertar para necessidade de conferência.
+Pendente	Ausência de base suficiente.	Solicitar documento, trecho ou validação da área competente.
 ---
-
-## 🏗️ Adequação à Resolução CNJ nº 652/2025 (Obras e BIM)
-A Resolução nº 652/2025 torna **obrigatória a utilização de BIM (Building Information Modelling)** em obras de maior vulto.  
-O Agente_EDITAL identifica automaticamente editais de obras e inclui cláusulas sobre:
-- Compatibilização de projetos em formato IFC.  
-- Uso obrigatório de **SINAPI/SICRO** para orçamentos.  
-- Plano de riscos e cronograma físico-financeiro.  
-- Responsabilidade técnica pela modelagem e entrega digital.
-
+4. Estrutura padrão do edital
+O edital deve manter coerência com o TR, ETP, minuta contratual e anexos. A estrutura abaixo funciona como referência para análise e não substitui o modelo oficial vigente.
+Item	Seção do edital	Conteúdo esperado	Pontos críticos de análise
+1	Preâmbulo e identificação	Órgão, processo, modalidade, forma, data da sessão, plataforma, objeto resumido.	Conferir processo, unidade, modalidade, data e plataforma.
+2	Objeto	Descrição clara, unidade, quantitativos, local de execução, anexos técnicos.	Deve coincidir com TR e minuta contratual.
+3	Fundamento legal e regime	Base legal, modalidade, regime de execução, forma de contratação.	Não citar norma inaplicável.
+4	Condições de participação	Vedações, impedimentos, consórcios, cooperativas, ME/EPP, documentos.	Evitar restrições sem justificativa.
+5	Credenciamento e propostas	Forma de envio, prazo, validade da proposta, composição de preços.	Alinhar com plataforma eletrônica e TR.
+6	Critério de julgamento	Menor preço, maior desconto, técnica e preço etc.	Critérios devem ser objetivos e mensuráveis.
+7	Habilitação	Jurídica, fiscal, social, trabalhista, econômico-financeira e técnica.	Exigências proporcionais e vinculadas ao objeto.
+8	Prova de exequibilidade	Quando aplicável, critérios de análise e diligências.	Evitar subjetividade.
+9	Sanções administrativas	Infrações, multas, impedimento, inidoneidade, contraditório.	Harmonizar com contrato e regulamento interno.
+10	Condições contratuais	Vigência, prazo, reajuste, repactuação, garantia, pagamento, fiscalização.	Verificar consistência com minuta contratual.
+11	Recursos, impugnações e esclarecimentos	Prazos, canais, efeitos e procedimento.	Observar Lei nº 14.133/2021 e regulamento aplicável.
+12	Disposições finais	Foro, publicação, PNCP, anexos, casos omissos.	Confirmar anexos e rastreabilidade.
+13	Anexos	TR, ETP quando cabível, minuta contratual, modelos, planilhas, matriz de riscos.	Anexos devem existir e estar coerentes.
 ---
-
-## 🧠 Quadro de Dúvidas e Encaminhamentos Práticos
-| Tema | Questão Prática | Encaminhamento Sugerido |
-|------|------------------|-------------------------|
-| Aplicação temporal | Contratos anteriores a 30/09/25 com aditivos posteriores seguem qual norma? | Manter o regime original até o encerramento. |
-| Prazo de abertura de conta | Contagem da assinatura ou da ordem de início? | Da assinatura; admitir atraso bancário justificado. |
-| Remuneração da conta | Pode ser “outro índice de maior liquidez”? | Padrão TJSP: poupança; exceções via ato da SOF. |
-| Anuência sindical | E se o sindicato não responder em 10 dias? | Autorizar liberação com justificativa e prova de contato. |
-| Fiscalização contratual | O que é fiscalização suficiente? | Checklist mensal e comprovação no SEI. |
-
+5. Checklist geral de conformidade do edital
+O agente deve classificar cada item com um dos seguintes status:
+✅ Completo: presente, claro e coerente.
+⚠️ Parcial: presente, mas exige ajuste, complemento ou harmonização.
+❌ Ausente: não localizado e necessário ao caso.
+➖ Não aplicável: item incompatível com o objeto analisado.
+❓ Pendente de validação: depende de documento, área técnica, jurídico ou autoridade competente.
+Nº	Item de verificação	Critério de conformidade	Status
+1	Identificação do processo	Processo, órgão, modalidade e data indicados corretamente.	
+2	Objeto	Objeto idêntico ao TR, sem ambiguidade ou ampliação indevida.	
+3	Modalidade	Compatível com a Lei nº 14.133/2021 e o objeto.	
+4	Forma eletrônica	Plataforma e procedimento definidos, quando aplicável.	
+5	Critério de julgamento	Objetivo, mensurável e compatível com o objeto.	
+6	Regime de execução	Indicado e coerente com TR/minuta contratual.	
+7	Valor estimado	Baseado em pesquisa de preços ou orçamento válido.	
+8	Dotação orçamentária	Indicada quando exigível.	
+9	Condições de participação	Vedações e permissões fundamentadas.	
+10	Consórcio	Permitido, vedado ou disciplinado com justificativa.	
+11	Cooperativas	Tratamento claro quando cabível.	
+12	ME/EPP	Regras compatíveis com legislação aplicável.	
+13	Proposta	Forma, validade, composição, lances e aceitabilidade claros.	
+14	Exequibilidade	Critérios e diligências definidos, se aplicável.	
+15	Habilitação jurídica	Exigências proporcionais.	
+16	Regularidade fiscal, social e trabalhista	Documentos previstos de forma adequada.	
+17	Qualificação técnica	Atestados e exigências compatíveis, sem restrição indevida.	
+18	Qualificação econômico-financeira	Exigida apenas quando necessária e justificada.	
+19	Garantia de proposta	Se houver, está justificada e compatível.	
+20	Garantia contratual	Percentual, modalidades e prazo definidos.	
+21	Pagamento	Critérios, medição, atesto, retenções e documentos definidos.	
+22	Reajuste	Índice, marco temporal e periodicidade claros.	
+23	Repactuação	Prevista para serviços contínuos com dedicação de mão de obra, quando aplicável.	
+24	Conta vinculada	Prevista para dedicação exclusiva de mão de obra, quando aplicável.	
+25	Sanções	Infrações e penalidades proporcionais e compatíveis com a Lei nº 14.133/2021.	
+26	Recursos e impugnações	Prazos e canais definidos.	
+27	Fiscalização	Gestor/fiscal, atribuições, rotinas e registros previstos.	
+28	Sustentabilidade	Critérios ambientais e de sustentabilidade avaliados quando pertinentes.	
+29	LGPD	Tratamento de dados previsto quando houver dados pessoais.	
+30	Publicação e transparência	Publicação no PNCP e sítios oficiais quando exigida.	
+31	Anexos	TR, minuta contratual, planilhas, modelos e anexos técnicos compatíveis.	
+32	Coerência interna	Prazos, valores, índices e obrigações iguais em todos os documentos.	
 ---
-
-## 💡 Casos Práticos Integrados
-O Agente_EDITAL reconhece diferentes tipos de licitação e aplica automaticamente as cláusulas correspondentes:
-
-| Tipo de Edital | Principais Cláusulas Automáticas |
-|----------------|----------------------------------|
-| **Serviços terceirizados** | Conta vinculada, retenção mensal e anuência sindical. |
-| **Obras públicas (BIM)** | Compatibilização IFC, cronograma físico-financeiro. |
-| **Contratações de TI** | SLA mínimo, suporte técnico e garantia de 12 meses. |
-| **Capacitação e cursos** | Técnica e preço, certificação e avaliação. |
-| **Manutenção predial** | Plano de manutenção e engenheiro responsável. |
-
+6. Regras específicas por tipo de objeto
+6.1. Serviços contínuos com dedicação exclusiva de mão de obra
+Aplicar checklist adicional quando o objeto envolver limpeza, vigilância, recepção, apoio administrativo, manutenção com equipe residente ou outros serviços com dedicação exclusiva.
+Pontos obrigatórios de análise:
+conta vinculada ou regime previsto pelo normativo aplicável;
+retenção de encargos trabalhistas e previdenciários;
+planilha de custos e formação de preços;
+repactuação;
+CCT/ACT/dissídio aplicável;
+fiscalização mensal de folha, FGTS, INSS, benefícios e ponto;
+procedimento de liberação de valores retidos;
+pagamento direto ou medidas de proteção em caso de inadimplemento;
+substituição de empregados;
+uniformes, EPIs e benefícios;
+controle de absenteísmo e glosas;
+responsabilidade do fiscal, gestor, unidade gestora e SOF quando aplicável.
+6.2. Obras e serviços de engenharia
+Aplicar análise específica quando o objeto envolver obra, reforma, manutenção predial, projeto, fiscalização, built to suit, engenharia consultiva ou atividade técnica correlata.
+Pontos obrigatórios de análise:
+definição correta do tipo de objeto: obra, serviço comum de engenharia, serviço especial de engenharia, manutenção ou projeto;
+projeto básico, executivo ou documentação técnica equivalente;
+orçamento com referência adequada;
+cronograma físico-financeiro;
+matriz de riscos, quando aplicável;
+habilitação técnica operacional e profissional;
+responsabilidade técnica e registros profissionais;
+critérios de medição e aceite;
+garantias;
+seguros;
+uso de BIM quando aplicável e tecnicamente justificado;
+compatibilização entre edital, TR, projetos e planilhas.
+6.3. Tecnologia da informação
+Aplicar análise específica quando o objeto envolver software, licenças, desenvolvimento, suporte, sustentação, infraestrutura, nuvem, segurança da informação ou serviços digitais.
+Pontos obrigatórios de análise:
+requisitos funcionais e não funcionais;
+SLA e níveis mínimos de serviço;
+suporte técnico;
+segurança da informação;
+LGPD;
+propriedade intelectual;
+interoperabilidade;
+portabilidade de dados;
+continuidade do serviço;
+critérios objetivos de aceite;
+matriz de responsabilidades.
+6.4. Capacitação, cursos e treinamento
+Pontos obrigatórios de análise:
+justificativa da necessidade;
+objetivos de aprendizagem;
+público-alvo;
+carga horária;
+metodologia;
+qualificação da instituição ou instrutor;
+critérios de avaliação;
+certificação;
+forma de contratação e fundamento jurídico.
+6.5. Bens, equipamentos e materiais
+Pontos obrigatórios de análise:
+especificação objetiva;
+unidade de medida;
+garantia técnica;
+assistência técnica;
+prazo e local de entrega;
+compatibilidade com catálogos oficiais;
+vedação de indicação indevida de marca;
+critérios de sustentabilidade;
+recebimento provisório e definitivo.
 ---
-
-## 🧾 Diagnóstico Normativo e Relatórios
-O agente gera automaticamente:
-- **Edital completo (Markdown/Word)**  
-- **Diagnóstico normativo (JSON)**  
-- **Mapa de conformidade CNJ (651/652)**  
-- **Relatório de riscos e recomendações (TXT)**
-
+7. Resolução CNJ nº 651/2025 – conta vinculada e retenção trabalhista
+7.1. Aplicação
+A Resolução CNJ nº 651/2025 deve ser considerada em contratações administrativas do Poder Judiciário que envolvam prestação de serviços contínuos com dedicação exclusiva de mão de obra.
+7.2. Pontos a verificar no edital
+Item	Pergunta de controle	Conduta do agente
+Conta vinculada	O edital prevê conta vinculada bloqueada ou mecanismo equivalente previsto na norma?	Se ausente, apontar lacuna.
+Prazo	Há prazo para abertura da conta?	Verificar coerência com a norma e modelo interno.
+Retenções	Há previsão de retenção de férias, 13º, FGTS, contribuições e demais encargos aplicáveis?	Conferir planilha e cláusula.
+Movimentação	A movimentação depende de autorização da Administração?	Exigir procedimento claro.
+Liberação	Há documentos mínimos para liberação de valores?	Indicar checklist documental.
+Fiscalização	O edital/contrato prevê fiscalização mensal?	Sugerir inclusão de rotina.
+Inadimplemento	Há mecanismo de proteção ao trabalhador e à Administração?	Sugerir cláusula de pagamento direto ou medida compatível.
+Competências	Estão indicados fiscal, gestor, unidade gestora, SOF e ordenador, quando aplicável?	Sugerir ato interno ou matriz de responsabilidades.
+7.3. Checklist mensal de fiscalização
+Nº	Documento/controle	Status
+1	Relação nominal de empregados vinculados ao contrato.	☐ OK ☐ Pendente ☐ N/A
+2	Folha de pagamento.	☐ OK ☐ Pendente ☐ N/A
+3	Comprovante de pagamento de salários.	☐ OK ☐ Pendente ☐ N/A
+4	Comprovante de vale-transporte.	☐ OK ☐ Pendente ☐ N/A
+5	Comprovante de vale-alimentação/refeição.	☐ OK ☐ Pendente ☐ N/A
+6	Guia e comprovante de FGTS.	☐ OK ☐ Pendente ☐ N/A
+7	Guia e comprovante de INSS/contribuições previdenciárias.	☐ OK ☐ Pendente ☐ N/A
+8	Folhas de ponto ou registros de frequência.	☐ OK ☐ Pendente ☐ N/A
+9	Planilha de retenções e encargos.	☐ OK ☐ Pendente ☐ N/A
+10	Extrato da conta vinculada.	☐ OK ☐ Pendente ☐ N/A
+11	Solicitação de liberação de valores, quando houver.	☐ OK ☐ Pendente ☐ N/A
+12	Autorização de liberação pela autoridade competente.	☐ OK ☐ Pendente ☐ N/A
+13	Registro no processo administrativo/SEI.	☐ OK ☐ Pendente ☐ N/A
+7.4. Cláusula-modelo – conta vinculada
+> A contratada deverá observar o regime de retenção de provisões para encargos trabalhistas, previdenciários e demais garantias aplicável aos contratos com dedicação exclusiva de mão de obra no âmbito do Poder Judiciário, mantendo conta vinculada bloqueada ou mecanismo equivalente previsto no instrumento convocatório, na minuta contratual e nos normativos vigentes. A movimentação dos valores retidos dependerá de autorização formal da Administração, mediante comprovação documental do cumprimento das obrigações correspondentes, sem prejuízo da fiscalização mensal pelo gestor e fiscal do contrato.
+7.5. Cláusula-modelo – documentos para liberação
+> A liberação de valores vinculados à cobertura de encargos trabalhistas, previdenciários e demais garantias ficará condicionada à apresentação de documentação comprobatória suficiente, incluindo, quando aplicável, folha de pagamento, comprovantes de salários e benefícios, guias e comprovantes de recolhimento de FGTS e contribuições previdenciárias, termo de rescisão, comprovantes de quitação e demais documentos exigidos pela Administração, observados os normativos vigentes e o procedimento interno do TJSP.
+7.6. Cláusula-modelo – inadimplemento trabalhista
+> Constatado inadimplemento de obrigações trabalhistas, previdenciárias ou correlatas vinculadas à execução contratual, a Administração poderá adotar as medidas previstas na legislação, no contrato e nos normativos internos, inclusive retenção de pagamentos, utilização de valores provisionados, pagamento direto aos trabalhadores quando cabível, abertura de procedimento sancionatório e comunicação às unidades competentes, assegurados o contraditório e a ampla defesa.
 ---
-
-## 🧭 Governança e Responsáveis
-| Função | Responsável |
-|--------|--------------|
-| Coordenação geral | **Orchestrator Synapse** |
-| Arquitetura e integração | **Architect Synapse** |
-| Diagnóstico e testes | **Diagnostic Synapse** |
-| Engenharia e automação | **Engenheiro Synapse** |
-| Documentação e comunicação | **Writer Synapse** |
-
+8. Resolução CNJ nº 652/2025 – obras, engenharia, BIM e built to suit
+8.1. Aplicação
+A Resolução CNJ nº 652/2025 deve ser considerada em contratações relacionadas a obras, serviços de engenharia, planejamento, execução, monitoramento, precificação, editais, habilitação técnica e locações sob medida no âmbito do Poder Judiciário.
+8.2. Regra de cautela sobre BIM
+O agente não deve afirmar de forma automática que todo edital de obra exige BIM. Deve verificar:
+tipo de obra ou serviço;
+vulto e complexidade;
+existência de projeto e nível de maturidade BIM;
+capacidade da Administração de gerir o ambiente e os entregáveis;
+justificativa técnica no processo;
+compatibilidade com cronograma, orçamento, equipe e fiscalização;
+exigências previstas no TR e nos modelos institucionais.
+8.3. Pontos de verificação em obras e engenharia
+Item	Pergunta de controle	Conduta do agente
+Planejamento	Há programa de necessidades, ETP e TR compatíveis?	Verificar coerência.
+Projeto	O edital identifica projeto básico/executivo e anexos?	Apontar lacunas.
+Orçamento	Há referência de composição de custos, BDI e encargos?	Verificar rastreabilidade.
+Cronograma	Há cronograma físico-financeiro?	Exigir clareza.
+Habilitação técnica	As exigências são proporcionais ao objeto?	Alertar para restrição indevida.
+BIM	O uso de BIM está justificado e descrito?	Verificar escopo, entregáveis e CDE.
+Riscos	Há matriz de riscos quando cabível?	Recomendar inclusão.
+Fiscalização	Há regras de medição, aceite e responsabilidade técnica?	Conferir minuta contratual.
+Built to suit	Há disciplina específica quando se tratar de locação sob medida?	Sugerir validação jurídica.
+8.4. Cláusula-modelo – BIM condicionado à justificativa técnica
+> Quando tecnicamente justificado no processo de contratação, a contratada deverá desenvolver, compatibilizar e entregar os modelos digitais em metodologia BIM, observadas as diretrizes do Termo de Referência, do Plano de Execução BIM, dos requisitos de informação da Administração e da Resolução CNJ nº 652/2025. Os entregáveis deverão indicar, conforme o caso, disciplinas modeladas, formatos de arquivo, nível de desenvolvimento, responsabilidades, ambiente comum de dados, critérios de compatibilização, vinculação orçamentária e cronograma físico-financeiro.
+8.5. Cláusula-modelo – responsabilidade técnica em obras
+> A contratada deverá manter profissional(is) legalmente habilitado(s) e responsável(is) técnico(s) pela execução do objeto, com registro no conselho profissional competente, cabendo-lhe assegurar a conformidade técnica, a observância dos projetos e especificações, a emissão dos documentos de responsabilidade técnica exigíveis e a correção de inconsistências identificadas pela fiscalização.
 ---
-
-## 📅 Encaminhamentos Estratégicos
-| Ação | Responsável | Prazo |
-|------|--------------|-------|
-| Publicação da versão pública (README SharePoint) | SAAB / TJSP | 15/11/2025 |
-| Apresentação à Presidência | SAAB / GTAJ / SOF | 20/11/2025 |
-| Atualização dos modelos de edital e contrato | SAAB / Jurídico | 15/12/2025 |
-| Integração ao SynapseNext | Equipe Técnica | 2026 |
-
+9. Cláusulas obrigatórias e padronizadas
+As cláusulas abaixo são modelos de referência. Devem ser ajustadas ao objeto, ao modelo oficial TJSP e à validação jurídica.
+9.1. Cláusula de objeto
+> O presente edital tem por objeto a contratação de [descrever objeto], conforme condições, quantidades, especificações técnicas, locais de execução, prazos e demais exigências estabelecidas no Termo de Referência, na minuta contratual e nos anexos que integram este instrumento.
+9.2. Cláusula de coerência com o Termo de Referência
+> As condições técnicas, quantitativos, prazos, responsabilidades e critérios de execução constantes deste edital devem ser interpretados em conjunto com o Termo de Referência e a minuta contratual. Em caso de divergência material entre os documentos, a Administração deverá promover o saneamento antes da publicação ou da continuidade do certame.
+9.3. Cláusula de garantia contratual
+> A contratada deverá apresentar garantia contratual no percentual e prazo definidos neste edital e na minuta contratual, observadas as modalidades admitidas pela Lei nº 14.133/2021, incluindo caução, seguro-garantia ou fiança bancária, conforme opção da contratada e condições estabelecidas no instrumento convocatório.
+9.4. Cláusula de reajuste
+> Os preços contratados poderão ser reajustados após o interregno mínimo previsto na legislação e no contrato, contado da data-base definida no instrumento convocatório, mediante aplicação do índice setorial ou geral indicado no edital, desde que observadas as condições legais e a manutenção da vantajosidade para a Administração.
+9.5. Cláusula de repactuação
+> Nos contratos de serviços contínuos com dedicação exclusiva de mão de obra, os preços poderão ser repactuados para preservação do equilíbrio econômico-financeiro, mediante demonstração analítica da variação dos custos, especialmente aqueles decorrentes de acordo, convenção ou dissídio coletivo de trabalho, observados os prazos, documentos e condições previstos na legislação e no contrato.
+9.6. Cláusula de sanções administrativas
+> O descumprimento total ou parcial das obrigações assumidas sujeitará a contratada às sanções administrativas previstas na Lei nº 14.133/2021, no regulamento interno aplicável e no instrumento contratual, incluindo advertência, multa, impedimento de licitar e contratar e declaração de inidoneidade, observados a proporcionalidade, a motivação, o contraditório e a ampla defesa.
+9.7. Cláusula de fiscalização
+> A execução contratual será acompanhada e fiscalizada por gestor e fiscal designados pela Administração, aos quais caberá registrar ocorrências, verificar o cumprimento das obrigações, atestar medições, solicitar correções, instruir processos de pagamento e comunicar irregularidades à unidade competente, observadas as atribuições previstas na legislação, nos normativos internos e no contrato.
+9.8. Cláusula de glosas e descontos
+> A Administração poderá aplicar glosas, descontos ou retenções proporcionais quando constatado descumprimento de níveis mínimos de serviço, entrega parcial, atraso, falha operacional, ausência de documentação obrigatória ou execução em desconformidade com o Termo de Referência, assegurada a motivação do ato e o registro no processo administrativo.
+9.9. Cláusula de sustentabilidade
+> A contratada deverá observar, quando aplicável ao objeto, critérios de sustentabilidade ambiental, eficiência no uso de recursos, redução de resíduos, descarte adequado, logística reversa, eficiência energética, controle de emissões, redução de ruídos e demais práticas previstas no Termo de Referência, na legislação e nos normativos institucionais pertinentes.
+9.10. Cláusula de LGPD
+> A contratada deverá observar a legislação de proteção de dados pessoais sempre que, em razão da execução contratual, realizar tratamento de dados pessoais, adotando medidas técnicas e administrativas aptas a proteger os dados contra acessos não autorizados, perdas, alterações, comunicações indevidas ou qualquer forma de tratamento inadequado ou ilícito.
 ---
+10. Fluxo de análise normativa do agente
+Quando o usuário submeter minuta de edital ou documento correlato, o agente deve seguir o fluxo abaixo.
+```text
+1. IDENTIFICAÇÃO DO CASO
+   ├─ Tipo de objeto
+   ├─ Modalidade
+   ├─ Regime de execução
+   ├─ Documentos fornecidos
+   └─ Lacunas documentais iniciais
 
-## 🧩 Créditos Institucionais
-**SAAB – Secretaria de Administração e Abastecimento**  
-**SOF – Secretaria de Orçamento e Finanças**  
-**GTAJ – Grupo Técnico de Apoio às Contratações**  
-**EPM – Escola Paulista da Magistratura**  
-**Projeto SynapseNext – TJSP (2025)**  
+2. EXTRAÇÃO DE ELEMENTOS DO EDITAL
+   ├─ Objeto
+   ├─ Critério de julgamento
+   ├─ Habilitação
+   ├─ Garantia
+   ├─ Pagamento/reajuste/repactuação
+   ├─ Sanções
+   ├─ Fiscalização
+   └─ Anexos
 
+3. COMPARAÇÃO ENTRE DOCUMENTOS
+   ├─ Edital x TR
+   ├─ Edital x minuta contratual
+   ├─ TR x ETP
+   ├─ Planilhas x objeto
+   └─ Prazos/valores/índices entre documentos
+
+4. APLICAÇÃO DO CHECKLIST GERAL
+   ├─ ✅ Completo
+   ├─ ⚠️ Parcial
+   ├─ ❌ Ausente
+   ├─ ➖ Não aplicável
+   └─ ❓ Pendente de validação
+
+5. CHECKLIST ESPECÍFICO POR TIPO DE OBJETO
+   ├─ Dedicação exclusiva de mão de obra → CNJ 651/2025
+   ├─ Obras/engenharia/BIM → CNJ 652/2025
+   ├─ TI → SLA, LGPD, segurança, suporte
+   ├─ Capacitação → técnica, certificação e avaliação
+   └─ Bens/equipamentos → garantia, assistência e entrega
+
+6. DIAGNÓSTICO
+   ├─ Resumo executivo
+   ├─ Matriz de achados
+   ├─ Riscos
+   ├─ Recomendações
+   └─ Sugestões de redação
+
+7. SAÍDA FINAL
+   ├─ Diagnóstico normativo
+   ├─ Lista de pendências
+   ├─ Cláusulas sugeridas
+   ├─ Quadro de riscos
+   └─ Próximas providências
+```
 ---
+11. Formato padrão de diagnóstico normativo
+```markdown
+# Diagnóstico Normativo – [Objeto]
 
-## 💬 Mensagem Padrão do Agente
-> “Olá! 👋 Sou o **Agente_EDITAL – SAAB 5.3**, responsável por apoiar a elaboração dos editais de licitação do TJSP, conforme a Lei nº 14.133/2021, as Resoluções CNJ nº 651 e 652/2025 e o Manual de Licitações do TJSP (2025).  
-> Deseja gerar um edital a partir de um **Termo de Referência existente** ou iniciar **um novo edital do zero**?”
+## 1. Resumo executivo
 
+| Indicador | Resultado |
+|---|---:|
+| Itens completos | [x] |
+| Itens parciais | [x] |
+| Itens ausentes | [x] |
+| Itens não aplicáveis | [x] |
+| Pendências de validação | [x] |
+
+**Conclusão preliminar:** [Conforme / Conforme com ajustes / Não recomendado publicar sem saneamento / Depende de validação técnica ou jurídica].
+
+## 2. Documentos analisados
+
+- [Documento 1]
+- [Documento 2]
+- [Documento 3]
+
+## 3. Achados principais
+
+| Nº | Tema | Status | Achado | Risco | Recomendação |
+|---|---|---|---|---|---|
+| 1 | Objeto | ✅ | Coerente com o TR. | Baixo | Manter redação. |
+| 2 | Habilitação técnica | ⚠️ | Exigência ampla sem justificativa. | Médio | Ajustar proporcionalidade. |
+| 3 | Conta vinculada | ❌ | Não localizada. | Alto | Inserir cláusula. |
+
+## 4. Recomendações de redação
+
+[Inserir cláusulas sugeridas]
+
+## 5. Pendências para a área técnica/jurídica
+
+- [Pendência 1]
+- [Pendência 2]
+
+## 6. Grau de segurança da análise
+
+[Alto / Médio / Baixo / Pendente]
+```
 ---
-
-📍 **Base de Conhecimento Pública**
-- `base_conhecimento_agente_edital_saab53_v2.txt`  
-- `trechos_normativos_e_boas_praticas_edital_tjsp.txt`  
-- `casos_praticos_e_exemplos_aplicados.txt`
-
-Perfeito, Orchestrator 🧭 — abaixo está o conteúdo **completo e revisado do `README.md`**, pronto para **copiar e colar integralmente** no repositório
-`cdmattostjsp-sys/synapsenext-saab-edital-tjsp`.
-
-> ⚙️ Formatação validada para:
-> • GitHub (Markdown)
-> • Copilot Studio (leitura textual direta, UTF-8)
-> • SharePoint (modo texto expandido)
-
+12. Matriz de riscos contratuais
+Risco	Causa comum	Consequência	Prevenção no edital	Área envolvida
+Responsabilidade subsidiária trabalhista	Falta de controle de encargos em dedicação exclusiva.	Passivo trabalhista e glosas.	Conta vinculada, fiscalização mensal e documentos comprobatórios.	SAAB, fiscal, gestor, SOF.
+Restrição indevida à competitividade	Habilitação técnica excessiva.	Impugnação, suspensão, anulação.	Exigências proporcionais e justificadas.	Área técnica, licitação, GTAJ.
+Aditivo indevido	Escopo mal definido ou quantitativos imprecisos.	Aumento de custo e questionamento de controle.	Objeto claro, matriz de riscos e planilhas completas.	Área técnica, SAAB.
+Reajuste irregular	Índice, marco temporal ou regra ausentes.	Pagamento indevido ou litígio.	Cláusula de reajuste clara e coerente.	SAAB, SOF, GTAJ.
+Repactuação mal instruída	Ausência de planilha e critérios.	Desequilíbrio econômico-financeiro.	Exigir memória de cálculo e documentos.	Gestor, fiscal, SOF.
+Falha de fiscalização	Ausência de atribuições e rotinas.	Responsabilização e execução inadequada.	Prever gestor, fiscal, periodicidade e registros.	Unidade gestora.
+Obra com orçamento frágil	Planilhas sem referência ou sem rastreabilidade.	Sobrepreço, glosa, atraso.	Orçamento detalhado, cronograma e referências.	Engenharia, SAAB.
+BIM mal exigido	Exigência sem maturidade ou sem entregáveis claros.	Restrição competitiva, custo adicional, baixa utilidade.	Justificativa técnica, Plano BIM e CDE definidos.	Engenharia, TI, fiscalização.
+Inconsistência entre TR e edital	Versões divergentes.	Impugnação e insegurança contratual.	Conferência cruzada antes da publicação.	SAAB, área demandante.
+Falha de publicação	Ausência de PNCP ou transparência.	Irregularidade formal.	Checklist de publicação e anexos.	Licitação.
 ---
-
-# 🧠 README – Agente_EDITAL SAAB 5.3 – TJSP
-
-**Versão institucional – com integração das Resoluções CNJ nº 651/2025 e 652/2025**
-
+13. Boas práticas redacionais
+13.1. Linguagem
+Usar linguagem:
+impessoal;
+clara;
+objetiva;
+normativa;
+sem adjetivos desnecessários;
+sem expressões abertas que ampliem discricionariedade sem critério.
+13.2. Evitar
+“a critério exclusivo da Administração”, sem parâmetro;
+“poderá ser exigido”, sem dizer quando;
+“melhor proposta técnica”, sem pontuação objetiva;
+“objeto conforme necessidade”, sem quantitativo ou escopo;
+exigência de marca sem justificativa legal;
+atestado idêntico ao objeto, sem admitir compatibilidade;
+exigência de visita técnica obrigatória sem motivação;
+repetição divergente de prazos em seções distintas.
+13.3. Preferir
+“deverá apresentar” em obrigações objetivas;
+“observadas as condições previstas no Termo de Referência”;
+“mediante comprovação documental”;
+“conforme critérios objetivos definidos no Anexo…”;
+“sem prejuízo de validação pela unidade competente”;
+“quando aplicável ao objeto”.
+13.4. Exemplos
+Redação frágil:
+> A empresa deverá comprovar experiência anterior.
+Redação aprimorada:
+> A licitante deverá apresentar atestado de capacidade técnica emitido por pessoa jurídica de direito público ou privado, que comprove a execução de objeto compatível em características, quantidades e prazos com o objeto licitado, observadas as exigências proporcionais previstas no Termo de Referência.
+Redação frágil:
+> O reajuste será feito conforme índice oficial.
+Redação aprimorada:
+> Os preços contratados poderão ser reajustados após o interregno mínimo legal, contado da data-base definida no contrato, mediante aplicação do índice [indicar índice], observadas as condições previstas no edital, na minuta contratual e na legislação aplicável.
 ---
-
-## ⚙️ Propósito
-
-O **Agente_EDITAL – SAAB 5.3** é um assistente **normativo e procedimental** do **Tribunal de Justiça do Estado de São Paulo (TJSP)**, desenvolvido no âmbito do **projeto SynapseNext – SAAB**.
-Seu objetivo é **gerar, revisar e auditar editais de licitação**, assegurando aderência à **Lei nº 14.133/2021**, às **Resoluções CNJ nº 651 e 652/2025**, e ao **Manual de Licitações e Contratos do TJSP (2025)**.
-
-> **Fluxo institucional SAAB:**
-> DFD → ETP → TR → EDITAL → CONTRATO
-
-O agente garante **rastreabilidade normativa**, **coerência técnica** e **padronização textual** nas fases do processo licitatório.
-
+14. Casos de uso do agente
+14.1. Análise de minuta
+“Analise este edital e emita diagnóstico normativo completo.”
+“Identifique cláusulas obrigatórias ausentes neste edital.”
+“Verifique se o edital está coerente com o Termo de Referência.”
+“Aponte riscos de impugnação.”
+“Classifique os achados por gravidade.”
+14.2. Dedicação exclusiva de mão de obra
+“Este edital de limpeza está adequado à Resolução CNJ nº 651/2025?”
+“Faltam cláusulas de conta vinculada?”
+“Crie checklist mensal de fiscalização para este contrato.”
+“Revise a cláusula de repactuação.”
+14.3. Obras e engenharia
+“Este edital de reforma precisa prever BIM?”
+“Analise a habilitação técnica deste edital de obra.”
+“Verifique se o cronograma físico-financeiro está previsto.”
+“A exigência de responsável técnico está proporcional?”
+14.4. Tecnologia da informação
+“Revise o edital de contratação de software.”
+“Verifique se o SLA está objetivo.”
+“A cláusula de LGPD é suficiente?”
+“Identifique riscos de dependência tecnológica.”
+14.5. Geração de cláusulas
+“Gere cláusula de garantia contratual.”
+“Gere cláusula de conta vinculada.”
+“Gere cláusula de fiscalização.”
+“Gere cláusula de sanções.”
+“Gere cláusula de BIM condicionada à justificativa técnica.”
 ---
-
-## 📜 Fundamentação Normativa
-
-| Norma                                | Conteúdo Aplicável                                                             |
-| ------------------------------------ | ------------------------------------------------------------------------------ |
-| **Lei nº 14.133/2021**               | Procedimentos licitatórios (arts. 53–82) e cláusulas contratuais (arts. 92–94) |
-| **Decreto Estadual nº 67.381/2022**  | Regras de julgamento e critérios de habilitação                                |
-| **Provimento CSM nº 2.724/2023**     | Governança das contratações no TJSP                                            |
-| **Manual de Licitações TJSP (2025)** | Estrutura e padronização textual dos editais                                   |
-| **Manual de Contratos TJSP (2025)**  | Regras de fiscalização e perfis de gestão                                      |
-| **Resolução CNJ nº 651/2025**        | Retenção mensal e conta vinculada bloqueada                                    |
-| **Resolução CNJ nº 652/2025**        | Obras públicas e exigência de metodologia BIM                                  |
-| **Checklists SAAB (Geral e TI)**     | Itens obrigatórios da NLLC e de conformidade documental                        |
-
+15. Perguntas que o agente deve fazer quando faltar informação
+O agente deve evitar perguntas desnecessárias quando puder trabalhar com o material disponível. Porém, quando a falta de informação impedir análise segura, pode solicitar:
+Qual é o objeto da contratação?
+O TR está disponível?
+Há minuta contratual?
+A contratação envolve dedicação exclusiva de mão de obra?
+Há obra, serviço de engenharia ou projeto?
+O edital segue modelo oficial TJSP?
+A modalidade e o critério de julgamento já foram definidos?
+Há pesquisa de preços ou orçamento estimativo?
+O processo envolve TI, dados pessoais ou segurança da informação?
+Há decisão institucional sobre uso de BIM, conta vinculada ou matriz de riscos?
 ---
-
-## 🧱 Estrutura Padrão do Edital
-
-1. **Preâmbulo e Identificação**
-2. **Objeto da Licitação**
-3. **Fundamento Legal e Regime de Execução**
-4. **Condições de Participação**
-5. **Credenciamento e Envio de Propostas**
-6. **Critérios de Julgamento e Classificação**
-7. **Habilitação Jurídica, Fiscal e Técnica**
-8. **Sanções e Penalidades**
-9. **Condições Contratuais (prazo, garantias, reajuste, pagamento)**
-10. **Recursos e Impugnações**
-11. **Disposições Finais**
-
-Cada item é validado com base na legislação aplicável e nas diretrizes da SAAB/TJSP.
-
+16. Regras de resposta do agente
+16.1. Estrutura mínima de resposta
+Sempre que analisar documento, o agente deve responder em estrutura objetiva:
+conclusão preliminar;
+principais achados;
+riscos;
+recomendações;
+cláusulas sugeridas;
+pendências de validação.
+16.2. Classificação de gravidade
+Gravidade	Critério	Exemplo
+Alta	Pode impedir publicação, gerar nulidade ou risco jurídico relevante.	Ausência de critério de julgamento, objeto divergente, conta vinculada ausente em dedicação exclusiva.
+Média	Exige ajuste antes da publicação, mas é saneável.	Falta de detalhamento de documentos, cláusula genérica de sanções.
+Baixa	Ajuste redacional ou melhoria de clareza.	Numeração, redundância, padronização textual.
+16.3. Grau de confiança
+Ao final de análises sensíveis, o agente deve indicar:
+> **Grau de confiança:** alto/médio/baixo.  
+> **Motivo:** documentos analisados, clareza da norma, pendências existentes.
 ---
+17. Modelo compacto de edital – dedicação exclusiva de mão de obra
+> Este modelo é referência de estrutura. Deve ser substituído pelo modelo oficial TJSP aplicável.
+```markdown
+# Edital – Serviços com Dedicação Exclusiva de Mão de Obra
 
-## ⚖️ Adequação Normativa CNJ nº 651/2025 e 652/2025
+## 1. Preâmbulo
+O Tribunal de Justiça do Estado de São Paulo, por meio da Secretaria de Administração e Abastecimento, torna pública a realização de licitação para contratação de serviços contínuos com dedicação exclusiva de mão de obra, conforme condições estabelecidas neste edital e anexos.
 
-### 🔹 Resolução CNJ nº 651/2025 – Retenção de Encargos Trabalhistas
+## 2. Objeto
+Contratação de empresa especializada para prestação de [descrever serviço], com dedicação exclusiva de mão de obra, conforme especificações, quantitativos, locais de execução e condições constantes do Termo de Referência.
 
-* Conta vinculada bloqueada em banco público (abertura até 30 dias após assinatura do contrato).
-* Retenção mensal de férias, 13º, FGTS e encargos previdenciários.
-* Liberação condicionada à autorização judicial e anuência sindical.
-* Pagamento direto a trabalhadores em caso de inadimplemento.
-* Vedação de uso indevido da conta e previsão de penalidades específicas.
+## 3. Fundamento legal
+A contratação observará a Lei nº 14.133/2021, os normativos do CNJ aplicáveis, o Provimento CSM nº 2.724/2023, os modelos institucionais do TJSP e demais atos pertinentes.
 
-📍 *Impacto no edital:*
-O Agente_EDITAL insere automaticamente as cláusulas sobre abertura e movimentação da conta vinculada, controle de prazos, penalidades e responsabilidades da SOF e das unidades gestoras.
+## 4. Critério de julgamento
+O julgamento será realizado pelo critério de [menor preço global/por item/lote], observadas as condições de aceitabilidade e exequibilidade previstas neste edital.
 
+## 5. Habilitação
+A licitante deverá apresentar documentação jurídica, fiscal, social, trabalhista, econômico-financeira e técnica compatível com o objeto, conforme exigências proporcionais constantes deste edital.
+
+## 6. Conta vinculada e encargos trabalhistas
+A contratada deverá observar as regras de retenção de provisões para encargos trabalhistas, previdenciários e demais garantias aplicáveis aos contratos com dedicação exclusiva de mão de obra no âmbito do Poder Judiciário.
+
+## 7. Fiscalização mensal
+A execução contratual será acompanhada por gestor e fiscal designados, com verificação mensal dos documentos trabalhistas, previdenciários, benefícios, folha de pagamento, ponto, retenções e demais obrigações previstas.
+
+## 8. Reajuste e repactuação
+Os preços poderão ser reajustados ou repactuados conforme a natureza do contrato, os marcos temporais, os documentos comprobatórios e as condições previstas na legislação e no contrato.
+
+## 9. Sanções
+O descumprimento das obrigações sujeitará a contratada às sanções previstas na legislação, no regulamento interno e no contrato, assegurados o contraditório e a ampla defesa.
+
+## 10. Anexos
+I – Termo de Referência  
+II – Planilha de custos e formação de preços  
+III – Minuta de contrato  
+IV – Modelos de declaração  
+V – Checklist de fiscalização mensal
+```
 ---
+18. Modelo compacto de edital – obras, engenharia e BIM
+> Este modelo é referência de estrutura. Deve ser adaptado à natureza da obra, ao regime de execução, ao orçamento, aos projetos e ao modelo oficial TJSP aplicável.
+```markdown
+# Edital – Obra/Serviço de Engenharia
 
-### 🔹 Resolução CNJ nº 652/2025 – Obras Públicas e BIM
+## 1. Preâmbulo
+O Tribunal de Justiça do Estado de São Paulo torna pública a realização de licitação para contratação de [obra/serviço de engenharia], conforme condições estabelecidas neste edital, no Termo de Referência, nos projetos, planilhas e demais anexos.
 
-* Exige metodologia **BIM (Building Information Modelling)** em obras de maior vulto.
-* Compatibilização de projetos em ambiente colaborativo (CDE).
-* Orçamento baseado em **SINAPI/SICRO**.
-* Controle de riscos e rastreabilidade digital.
-* Treinamento obrigatório das equipes técnicas.
+## 2. Objeto
+Contratação de empresa especializada para execução de [descrever obra ou serviço], incluindo materiais, equipamentos, mão de obra, responsabilidade técnica, documentação, ensaios, medições e demais obrigações previstas.
 
-📍 *Impacto no edital:*
-O Agente_EDITAL gera cláusulas automáticas de exigência BIM, parâmetros de modelagem e cronograma físico-financeiro vinculado ao modelo digital.
+## 3. Fundamento legal
+A contratação observará a Lei nº 14.133/2021, a Resolução CNJ nº 652/2025 quando aplicável, o Provimento CSM nº 2.724/2023 e demais normas pertinentes.
 
+## 4. Projetos e orçamento
+Integram o edital os projetos, memoriais, planilhas orçamentárias, cronograma físico-financeiro, composições de custos, BDI, encargos e demais documentos técnicos.
+
+## 5. BIM
+Quando tecnicamente justificado, a contratação poderá exigir metodologia BIM, com definição dos entregáveis, formatos, ambiente comum de dados, responsabilidades, critérios de compatibilização e níveis de desenvolvimento.
+
+## 6. Habilitação técnica
+As exigências de capacidade técnico-operacional e técnico-profissional deverão ser compatíveis com o objeto, proporcionais ao risco e justificadas no processo.
+
+## 7. Fiscalização e medição
+A execução será acompanhada por fiscalização técnica designada, mediante registros, medições, aceite provisório e definitivo, controle de prazos, qualidade e conformidade com projetos.
+
+## 8. Sanções e glosas
+Falhas de execução, atrasos, desconformidades técnicas e descumprimento de obrigações poderão gerar glosas, multas e demais sanções previstas no contrato.
+
+## 9. Anexos
+I – Termo de Referência  
+II – Projetos e memoriais  
+III – Planilha orçamentária  
+IV – Cronograma físico-financeiro  
+V – Matriz de riscos, quando aplicável  
+VI – Plano BIM, quando aplicável  
+VII – Minuta de contrato
+```
 ---
+19. Modelo de ato interno – delegação de competências para conta vinculada
+> Minuta de referência. Deve ser validada pela Presidência, SOF, SAAB, GTAJ e unidades competentes antes de qualquer uso institucional.
+```markdown
+# Ato Normativo nº ___/20__
 
-## 🧩 Governança e Delegação de Competências
+Dispõe sobre a delegação de competências relativas à abertura, movimentação e controle das contas vinculadas destinadas à retenção de encargos trabalhistas, previdenciários e demais garantias nos contratos com dedicação exclusiva de mão de obra no âmbito do Tribunal de Justiça do Estado de São Paulo.
 
-| Função                                            | Responsável            | Base institucional                         |
-| ------------------------------------------------- | ---------------------- | ------------------------------------------ |
-| Abertura e manutenção de contas vinculadas        | **SOF**                | Delegação formal pelo ordenador de despesa |
-| Instrução e planilha analítica                    | **Unidade gestora**    | Manual Interno SAAB/SOF (2025)             |
-| Conferência documental e solicitação de liberação | **Fiscal do contrato** | Checklists mensais de fiscalização         |
-| Autorização final                                 | **Juiz ordenador**     | Ato de delegação da Presidência            |
+O PRESIDENTE DO TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO, no uso de suas atribuições legais e regimentais, considerando a Lei nº 14.133/2021, a Resolução CNJ nº 651/2025, o Provimento CSM nº 2.724/2023 e demais normas aplicáveis,
 
-Esse modelo de governança preserva a responsabilidade do ordenador e otimiza os fluxos operacionais.
-
----
-
-## 🧮 Modelos e Exemplos Incorporados
-
-Este repositório contém trechos exemplificativos utilizados pelo Agente_EDITAL, incluindo:
-
-* **Edital padrão de serviços com dedicação exclusiva** – CNJ nº 651/2025.
-* **Edital de obras com metodologia BIM** – CNJ nº 652/2025.
-* **Cláusulas obrigatórias de habilitação jurídica** – art. 67, Lei nº 14.133/2021.
-* **Modelos de relatórios de conformidade** – diagnóstico normativo e mapa de riscos.
-* **Notas técnicas saneadoras** – adequação documental entre regimes (169/2013 → 651/2025).
-
----
-
-## 💬 Exemplos de Interações com o Agente_EDITAL
-
-O Copilot Studio pode interpretar os comandos abaixo com base na leitura pública deste repositório:
-
-* “Gerar edital de serviços com dedicação exclusiva conforme Res. CNJ 651/2025.”
-* “Listar cláusulas obrigatórias de habilitação jurídica segundo a Lei 14.133/21.”
-* “Exibir exemplo de edital de obras com BIM conforme Res. CNJ 652/2025.”
-* “Gerar diagnóstico normativo para edital de vigilância e limpeza.”
-* “Indicar cláusulas contratuais obrigatórias sobre conta vinculada.”
-* “Explicar diferenças práticas entre Res. CNJ 169/2013 e 651/2025.”
-* “Incluir item de controle de riscos em edital de obra pública.”
-
-Esses prompts demonstram o escopo operacional e a capacidade analítica do agente.
-
----
-
-## 🧠 Comportamento Institucional
-
-| Pilar             | Descrição                                         |
-| ----------------- | ------------------------------------------------- |
-| **Normativo**     | Fundamenta-se sempre em leis, decretos e manuais. |
-| **Auditável**     | Registra status, fontes e referências normativas. |
-| **Analítico**     | Detecta inconsistências entre TR e Edital.        |
-| **Colaborativo**  | Sugere ajustes e boas práticas SAAB.              |
-| **Institucional** | Redação impessoal e aderente ao padrão TJSP.      |
-
----
-
-## 🧭 Encaminhamentos Estratégicos
-
-| Etapa | Ação                                             | Responsável       | Prazo      |
-| ----- | ------------------------------------------------ | ----------------- | ---------- |
-| 1️⃣   | Publicação da versão pública (README SharePoint) | SAAB / TJSP       | 15/11/2025 |
-| 2️⃣   | Apresentação executiva à Presidência             | SAAB / GTAJ / SOF | 20/11/2025 |
-| 3️⃣   | Atualização dos modelos de edital e contrato     | SAAB / Jurídico   | 15/12/2025 |
-| 4️⃣   | Integração ao SynapseNext após homologação       | Equipe técnica    | 2026       |
-
----
-
-## 📎 Créditos Institucionais
-
-**SAAB – Secretaria de Administração e Abastecimento**
-**SOF – Secretaria de Orçamento e Finanças**
-**GTAJ – Grupo Técnico de Apoio às Contratações**
-**EPM – Escola Paulista da Magistratura (capacitação)**
-**Projeto SynapseNext – TJSP (2025)**
-
-📍 *Coordenação Geral:* **Orchestrator Synapse**
-
----
-
-## 🪪 Licença
-
-Distribuído sob a **Licença MIT**.
-Permite uso, modificação e redistribuição com atribuição à SAAB/TJSP.
-
----
-
-### 🧾 Observação final
-
-Este repositório público é utilizado como **fonte de conhecimento do Agente_EDITAL – SAAB 5.3**, hospedado no **Microsoft Copilot Studio**, e integra a **prova de conceito (POC)** do **Projeto SynapseNext – TJSP**.
-Todo o conteúdo tem caráter técnico, normativo e educacional, destinado à melhoria dos fluxos licitatórios e à conformidade jurídica institucional.
-
----
-
-✅ **Instrução final:**
-Basta copiar **todo o conteúdo acima** e colar no arquivo `README.md` do seu repositório.
-Depois execute no terminal do Codespaces:
-
-
-# 🧾 Modelo Completo de Edital – Serviços com Dedicação Exclusiva de Mão de Obra
-## Conforme Resolução CNJ nº 651/2025 e Lei nº 14.133/2021
-
-### PREÂMBULO
-O TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO, por meio da Secretaria de Administração e Abastecimento – SAAB, torna público que realizará licitação na modalidade PREGÃO ELETRÔNICO, do tipo MENOR PREÇO GLOBAL, para contratação de empresa especializada na prestação de serviços contínuos com dedicação exclusiva de mão de obra, conforme condições estabelecidas neste edital e seus anexos.
-
-### 1. OBJETO
-Contratação de empresa especializada na prestação de serviços de apoio operacional e administrativo, com dedicação exclusiva de mão de obra, incluindo supervisão, materiais de consumo e equipamentos necessários, conforme especificações técnicas constantes no Termo de Referência (Anexo I).
-
-### 2. FUNDAMENTO LEGAL
-Este edital é regido pela Lei nº 14.133/2021, pela Resolução CNJ nº 651/2025, pelo Decreto Estadual nº 67.381/2022, pelo Provimento CSM nº 2.724/2023 e demais legislações correlatas.
-
-### 3. CONDIÇÕES DE PARTICIPAÇÃO
-Poderão participar da licitação as empresas que comprovarem estar devidamente cadastradas e regulares perante os órgãos competentes, atendendo às exigências deste edital e de seus anexos. É vedada a participação de empresas suspensas, impedidas ou declaradas inidôneas pela Administração Pública.
-
-### 4. CREDENCIAMENTO E ENVIO DE PROPOSTAS
-As propostas deverão ser enviadas exclusivamente por meio da plataforma eletrônica oficial, até a data e hora fixadas no preâmbulo. O credenciamento implica aceitação integral das condições do edital.
-
-### 5. CRITÉRIOS DE JULGAMENTO
-O julgamento será pelo critério de menor preço global, observando-se as exigências técnicas e legais constantes deste edital e do Termo de Referência.
-
-### 6. HABILITAÇÃO
-#### 6.1 Habilitação Jurídica
-a) Registro comercial, no caso de empresa individual;  
-b) Ato constitutivo, estatuto ou contrato social em vigor;  
-c) Prova de inscrição no CNPJ;  
-d) Documentos que comprovem os poderes do representante legal;  
-e) Declaração de não estar impedida de licitar (art. 63, §1º da Lei 14.133/21).
-
-#### 6.2 Regularidade Fiscal e Trabalhista
-a) Certidão negativa de débitos relativos a tributos federais, estaduais e municipais;  
-b) Certidão de regularidade com o FGTS e INSS;  
-c) Certidão negativa de débitos trabalhistas;  
-d) Declaração de cumprimento do art. 7º, XXXIII da CF (proibição de trabalho infantil).
-
-#### 6.3 Qualificação Técnica
-a) Atestados de capacidade técnica emitidos por pessoas jurídicas de direito público ou privado;  
-b) Relação de equipamentos e recursos humanos disponíveis;  
-c) Plano de gestão de pessoas e turnos de trabalho;  
-d) Declaração de atendimento à Resolução CNJ nº 651/2025.
-
-### 7. OBRIGAÇÕES DA CONTRATADA
-A contratada deverá observar rigorosamente as disposições legais e regulamentares aplicáveis, garantindo a manutenção de todas as condições de habilitação e qualificação exigidas durante a execução do contrato.
-
-### 8. CLÁUSULAS CONTRATUAIS ESSENCIAIS (CNJ 651/2025)
-#### 8.1 Conta Vinculada
-A contratada deverá abrir, no prazo máximo de 30 dias a contar da assinatura do contrato, uma conta vinculada bloqueada em banco público, destinada exclusivamente à retenção dos encargos trabalhistas e previdenciários (férias, 13º, FGTS e contribuições sociais).
-
-#### 8.2 Retenção Mensal
-A Administração reterá mensalmente, do valor devido à contratada, os percentuais relativos aos encargos trabalhistas, os quais serão depositados na conta vinculada.
-
-#### 8.3 Liberação dos Valores
-A liberação dos valores depositados dependerá de autorização formal da Administração, mediante comprovação das obrigações trabalhistas e anuência sindical quando aplicável.
-
-#### 8.4 Pagamento Direto
-Em caso de inadimplemento, a Administração poderá efetuar o pagamento direto aos trabalhadores, mediante comprovação documental e autorização judicial.
-
-#### 8.5 Penalidades
-O descumprimento das obrigações relacionadas à conta vinculada sujeitará a contratada às sanções previstas nos arts. 156 a 159 da Lei 14.133/21.
-
-### 9. SANÇÕES
-O inadimplemento das obrigações sujeitará a contratada às penalidades de advertência, multa, suspensão temporária e declaração de inidoneidade, observando-se o contraditório e a ampla defesa.
-
-### 10. RECURSOS ADMINISTRATIVOS
-Os recursos e impugnações observarão os prazos e condições dos arts. 165 a 168 da Lei nº 14.133/21.
-
-### 11. DISPOSIÇÕES FINAIS
-Os casos omissos serão resolvidos pela Comissão Permanente de Licitações da SAAB. O foro competente é o da Comarca de São Paulo/SP.
-
----
-
-## ANEXOS
-- Anexo I – Termo de Referência  
-- Anexo II – Planilha de Custos e Formação de Preços  
-- Anexo III – Minuta de Contrato  
-- Anexo IV – Modelo de Declarações  
-- Anexo V – Checklist CNJ nº 651/2025  
-
----
-
-**Observação:** Este modelo é referência para a elaboração automatizada pelo Agente_EDITAL – SAAB 5.3 e poderá ser adaptado conforme o objeto e a complexidade do serviço.
-
-
-# 🧱 Modelo Completo de Edital – Obras Públicas com Uso de BIM
-## Conforme Resolução CNJ nº 652/2025 e Lei nº 14.133/2021
-
-### PREÂMBULO
-O TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO, por meio da Secretaria de Administração e Abastecimento – SAAB, torna público que realizará licitação na modalidade CONCORRÊNCIA PÚBLICA, do tipo TÉCNICA E PREÇO, para contratação de empresa especializada em obras públicas com uso obrigatório da metodologia BIM (Building Information Modelling), conforme diretrizes estabelecidas neste edital e seus anexos.
-
-### 1. OBJETO
-Contratação de empresa especializada para execução da obra de construção do novo Fórum de [município], com obrigatoriedade de utilização da metodologia BIM em todas as fases do empreendimento, conforme as normas técnicas, o Termo de Referência e o Projeto Executivo.
-
-### 2. FUNDAMENTO LEGAL
-O presente edital rege-se pela Lei nº 14.133/2021, pela Resolução CNJ nº 652/2025, pelo Decreto Estadual nº 67.381/2022, pelo Provimento CSM nº 2.724/2023 e demais normas correlatas.
-
-### 3. CONDIÇÕES DE PARTICIPAÇÃO
-Poderão participar empresas ou consórcios que comprovem experiência na execução de obras com BIM, apresentando documentação técnica e profissional compatível com o objeto licitado.
-
-### 4. CREDENCIAMENTO E ENVIO DE PROPOSTAS
-As propostas deverão ser apresentadas eletronicamente, observando-se as instruções constantes no edital e anexos.
-
-### 5. CRITÉRIOS DE JULGAMENTO
-O julgamento será pelo critério de técnica e preço, sendo:  
-- 60% (sessenta por cento) da nota atribuída à proposta técnica;  
-- 40% (quarenta por cento) da nota atribuída à proposta de preço.
-
-### 6. HABILITAÇÃO
-#### 6.1 Jurídica
-Mesmos requisitos do art. 67 da Lei nº 14.133/21.
-
-#### 6.2 Técnica
-a) Atestados de capacidade técnica comprovando experiência prévia com metodologia BIM em obras de complexidade equivalente;  
-b) Apresentação de equipe técnica multidisciplinar com experiência comprovada em modelagem BIM;  
-c) Declaração de uso de plataforma CDE (Common Data Environment) e interoperabilidade IFC;  
-d) Comprovação de compatibilidade de projetos e gestão de riscos no ambiente digital.
-
-### 7. EXIGÊNCIAS ESPECÍFICAS DO BIM
-a) Desenvolvimento e entrega dos modelos BIM nas fases de projeto, execução e operação;  
-b) Compatibilização dos projetos arquitetônico, estrutural e complementares em ambiente colaborativo;  
-c) Utilização de sistemas de orçamento integrados ao modelo BIM (SINAPI/SICRO);  
-d) Cronograma físico-financeiro vinculado ao modelo digital;  
-e) Relatórios de coordenação, simulações e controle de riscos;  
-f) Responsabilização técnica pela integridade e atualização dos modelos.
-
-### 8. OBRIGAÇÕES DA CONTRATADA
-A contratada deverá assegurar o cumprimento integral das normas técnicas, bem como manter equipe qualificada e infraestrutura tecnológica adequada à execução do BIM.
-
-### 9. OBRIGAÇÕES DA ADMINISTRAÇÃO
-A Administração disponibilizará o modelo base em formato IFC e garantirá o acesso da fiscalização ao ambiente BIM durante toda a execução da obra.
-
-### 10. PENALIDADES
-O descumprimento das obrigações sujeitará a contratada às penalidades da Lei 14.133/21, sem prejuízo de rescisão contratual e cobrança de perdas e danos.
-
-### 11. RECURSOS E IMPUGNAÇÕES
-Aplicam-se os arts. 165 a 168 da Lei 14.133/21.
-
-### 12. DISPOSIÇÕES FINAIS
-Os casos omissos serão resolvidos pela Comissão de Licitação da SAAB. O foro competente é o da Comarca de São Paulo/SP.
-
----
-
-## ANEXOS
-- Anexo I – Termo de Referência (com especificações BIM)  
-- Anexo II – Projeto Executivo e Modelos IFC  
-- Anexo III – Planilha Orçamentária (SINAPI/SICRO)  
-- Anexo IV – Minuta de Contrato com Cláusulas BIM  
-- Anexo V – Checklist CNJ nº 652/2025  
-
-
-
-# 🧾 Checklist de Auditoria e Fiscalização Contratual
-## Agente_EDITAL – SAAB 5.3 | Tribunal de Justiça do Estado de São Paulo
-
-Este checklist foi elaborado para apoiar a **fiscalização contratual** de serviços contínuos com dedicação exclusiva de mão de obra, em conformidade com a **Resolução CNJ nº 651/2025**, a **Lei nº 14.133/2021** e as **Normas Internas do TJSP**.
-
-Seu objetivo é servir como instrumento de **controle preventivo e documental**, assegurando o registro de todas as obrigações legais e contratuais, de modo a **afastar a responsabilidade subsidiária** do Tribunal em eventual demanda trabalhista.
-
----
-
-## 🧭 1. Identificação
-- **Contrato nº:** [preencher]  
-- **Objeto:** [descrição resumida]  
-- **Unidade Gestora:** [preencher]  
-- **Empresa Contratada:** [preencher]  
-- **Fiscal do Contrato:** [preencher]  
-- **Período de Referência:** [mês/ano]
-
----
-
-## ⚖️ 2. Verificação Documental Mensal
-
-| Item | Documento / Ação | Situação | Observações |
-|------|------------------|-----------|--------------|
-| 1 | Comprovação de pagamento de salários e benefícios | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 2 | Guia de FGTS (GFIP) quitada e comprovante bancário | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 3 | Guia de INSS (GPS) quitada e comprovante bancário | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 4 | Folha de ponto mensal assinada por todos os empregados | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 5 | Relação nominal de empregados vinculados ao contrato | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 6 | Planilha de encargos e retenções trabalhistas atualizada | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 7 | Extrato da conta vinculada com saldo e movimentações | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 8 | Anuência sindical (se aplicável) | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 9 | Comprovação de recolhimento de vale-transporte e alimentação | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-| 10 | Atualização cadastral no SEI / Painel de Governança SAAB | ☐ OK | ☐ Pendente | ☐ Não se aplica |
-
----
-
-## 🧮 3. Controle da Conta Vinculada (Res. CNJ nº 651/2025)
-
-| Item | Procedimento | Situação | Observações |
-|------|---------------|-----------|--------------|
-| 1 | Conta vinculada aberta em banco público (até 30 dias) | ☐ OK | ☐ Pendente |
-| 2 | Retenção mensal dos encargos efetuada | ☐ OK | ☐ Pendente |
-| 3 | Solicitação de liberação registrada no SEI | ☐ OK | ☐ Pendente |
-| 4 | Análise e conferência documental realizada | ☐ OK | ☐ Pendente |
-| 5 | Autorização do ordenador de despesa registrada | ☐ OK | ☐ Pendente |
-| 6 | Liberação de valores aprovada com anuência sindical (quando exigida) | ☐ OK | ☐ Pendente |
-| 7 | Comprovação de destinação correta dos valores | ☐ OK | ☐ Pendente |
-| 8 | Arquivamento digital dos comprovantes no processo | ☐ OK | ☐ Pendente |
-
----
-
-## 🧱 4. Verificação Técnica (Obras e BIM – CNJ nº 652/2025)
-
-| Item | Documento / Ação | Situação | Observações |
-|------|------------------|-----------|--------------|
-| 1 | Modelo BIM atualizado e revisado mensalmente | ☐ OK | ☐ Pendente |
-| 2 | Compatibilização de projetos registrada em CDE | ☐ OK | ☐ Pendente |
-| 3 | Relatórios de coordenação e simulações de riscos | ☐ OK | ☐ Pendente |
-| 4 | Cronograma físico-financeiro validado | ☐ OK | ☐ Pendente |
-| 5 | Fiscalização com acesso digital à plataforma BIM | ☐ OK | ☐ Pendente |
-| 6 | Registro de inconformidades e correções | ☐ OK | ☐ Pendente |
-| 7 | Relatório fotográfico e documental de execução | ☐ OK | ☐ Pendente |
-
----
-
-## 🧩 5. Responsabilidade e Comunicação
-
-| Item | Ação | Responsável | Situação |
-|------|------|--------------|-----------|
-| 1 | Comunicação de irregularidades à SOF / SAAB | Fiscal do contrato | ☐ OK |
-| 2 | Notificação formal à contratada | Unidade Gestora | ☐ OK |
-| 3 | Registro de ocorrência no SEI | Fiscal / Unidade | ☐ OK |
-| 4 | Solicitação de providências corretivas | SAAB | ☐ OK |
-| 5 | Encaminhamento ao GTAJ, se necessário | SAAB / Jurídico | ☐ OK |
-
----
-
-## 📊 6. Consolidação e Análise Final
-
-| Categoria | Percentual de Conformidade | Nível |
-|------------|-----------------------------|--------|
-| Obrigações trabalhistas e previdenciárias | [___]% | ☐ Alta ☐ Média ☐ Baixa |
-| Conta vinculada e retenções | [___]% | ☐ Alta ☐ Média ☐ Baixa |
-| Obrigações sindicais | [___]% | ☐ Alta ☐ Média ☐ Baixa |
-| Fiscalização técnica (BIM) | [___]% | ☐ Alta ☐ Média ☐ Baixa |
-| Documentação no SEI | [___]% | ☐ Alta ☐ Média ☐ Baixa |
-
-🧩 **Índice Global de Conformidade:** [___]%
-
----
-
-## 📎 7. Assinaturas
-**Fiscal do Contrato:** ___________________________________________  
-**Unidade Gestora:** _____________________________________________  
-**SOF / SAAB:** _________________________________________________  
-**Data:** ____ / ____ / 2025
-
----
-
-### Observações Finais
-Este checklist deve ser arquivado digitalmente no processo SEI correspondente, compondo a trilha de auditoria do contrato.  
-Seu preenchimento regular serve como **prova documental de fiscalização suficiente**, conforme entendimento consolidado do **Tribunal de Contas da União (TCU)** e do **Conselho Nacional de Justiça (CNJ)**.
-
----
-
-**Elaboração:** SAAB / GTAJ / SOF  
-**Versão:** 2025.11.11  
-**Projeto:** SynapseNext – Agente_EDITAL SAAB 5.3 (TJSP)
-
----
-
-**Observação:** Este modelo é referência técnica para o Agente_EDITAL – SAAB 5.3 e poderá ser ajustado conforme o tipo de obra e a maturidade BIM exigida.
-
-
-# 🏛️ Modelo de Ato Interno de Delegação de Competências
-## Tribunal de Justiça do Estado de São Paulo – SAAB / SOF / GTAJ
-### Base normativa: Resolução CNJ nº 651/2025 | Lei nº 14.133/2021 | Provimento CSM nº 2.724/2023
-
----
-
-## 📜 ATO NORMATIVO Nº ___/2025
-**Dispõe sobre a delegação de competências relacionadas à abertura, movimentação e controle das contas vinculadas destinadas à retenção de encargos trabalhistas e previdenciários nos contratos com dedicação exclusiva de mão de obra, no âmbito do Tribunal de Justiça do Estado de São Paulo.**
-
----
-
-### O PRESIDENTE DO TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO,
-no uso de suas atribuições legais e regimentais, considerando o disposto na **Resolução CNJ nº 651/2025**, na **Lei nº 14.133/2021**, e no **Provimento CSM nº 2.724/2023**, resolve:
-
----
+RESOLVE:
 
 ## Art. 1º – Objeto
-Fica regulamentada, no âmbito do Tribunal de Justiça do Estado de São Paulo (TJSP), a **delegação de competências** para fins de operacionalização, movimentação e controle das **contas vinculadas** previstas na Resolução CNJ nº 651/2025, aplicáveis aos contratos com dedicação exclusiva de mão de obra.
+Fica regulamentada, no âmbito do TJSP, a delegação de competências para operacionalização, movimentação e controle das contas vinculadas aplicáveis aos contratos com dedicação exclusiva de mão de obra.
 
+## Art. 2º – Competências da SOF
+Compete à Secretaria de Orçamento e Finanças, observados os fluxos internos:
+I – orientar a abertura e manutenção das contas vinculadas;  
+II – acompanhar os procedimentos financeiros correlatos;  
+III – analisar, quando couber, os pedidos de liberação de valores;  
+IV – manter registros financeiros necessários à rastreabilidade.
+
+## Art. 3º – Competências da SAAB
+Compete à SAAB:
+I – coordenar a padronização dos modelos de edital, contrato e fiscalização;  
+II – orientar as unidades gestoras quanto às rotinas administrativas;  
+III – consolidar informações gerenciais;  
+IV – propor melhorias de governança.
+
+## Art. 4º – Competências da unidade gestora
+Compete à unidade gestora:
+I – instruir mensalmente o processo com os documentos de fiscalização;  
+II – encaminhar solicitações de liberação de valores;  
+III – comunicar irregularidades;  
+IV – manter trilha documental auditável.
+
+## Art. 5º – Competências do fiscal do contrato
+Compete ao fiscal:
+I – verificar mensalmente o cumprimento das obrigações trabalhistas e previdenciárias;  
+II – conferir documentação apresentada pela contratada;  
+III – registrar ocorrências e inconformidades;  
+IV – subsidiar decisões do gestor e da autoridade competente.
+
+## Art. 6º – Competência da autoridade ordenadora
+Compete à autoridade ordenadora autorizar, quando cabível, a liberação de valores retidos, a adoção de pagamento direto ou outras medidas previstas na legislação e no contrato.
+
+## Art. 7º – Vigência
+Este ato entra em vigor na data de sua publicação.
+
+São Paulo, ___ de __________ de 20__.
+
+[Assinatura]
+```
 ---
-
-## Art. 2º – Competências Delegadas
-
-I – **À Secretaria de Orçamento e Finanças (SOF):**
-1. Proceder à **abertura e manutenção das contas vinculadas** em banco público, observando o prazo de até 30 (trinta) dias contados da assinatura do contrato;  
-2. Efetuar os **depósitos mensais dos valores retidos** a título de encargos trabalhistas e previdenciários;  
-3. Analisar os pedidos de **liberação parcial ou total dos valores**, instruindo o processo com os documentos comprobatórios;  
-4. Consolidar, trimestralmente, os saldos das contas vinculadas e reportar à SAAB e à Presidência.
-
-II – **À Secretaria de Administração e Abastecimento (SAAB):**
-1. Coordenar o processo de **solicitação de liberação dos valores**, validando a conformidade documental e a anuência sindical quando aplicável;  
-2. Manter atualizado o **painel de governança das contas vinculadas**, integrando dados de fiscalização, retenções e liberações;  
-3. Emitir parecer técnico sobre **pedidos excepcionais de reembolso ou pagamento direto**;  
-4. Zelar pela padronização dos modelos de edital e contrato, conforme a Resolução CNJ nº 651/2025.
-
-III – **À Unidade Gestora / Setor Demandante:**
-1. Instruir o processo administrativo com a documentação mensal de fiscalização contratual;  
-2. Anexar planilha analítica com a apuração dos encargos retidos e comprovantes de pagamento;  
-3. Emitir relatório técnico e solicitar a liberação dos valores à SOF/SAAB;  
-4. Comunicar irregularidades à SAAB e ao GTAJ quando houver indício de inadimplemento trabalhista.
-
-IV – **Ao Fiscal do Contrato:**
-1. Verificar mensalmente o cumprimento das obrigações trabalhistas e previdenciárias pela contratada;  
-2. Preencher o **Checklist de Fiscalização Contratual (Anexo I)**;  
-3. Registrar no SEI os comprovantes de pagamento e extratos da conta vinculada;  
-4. Atestar as medições e indicar, quando necessário, a retenção ou bloqueio de valores.
-
-V – **Ao Ordenador de Despesas:**
-1. Autorizar a liberação dos valores retidos, após manifestação favorável da SOF e da SAAB;  
-2. Determinar o pagamento direto aos trabalhadores, em caso de inadimplemento da contratada, conforme art. 5º, inciso I, da Resolução CNJ nº 651/2025;  
-3. Responsabilizar-se pela decisão final quanto à destinação dos saldos remanescentes.
-
+20. Estrutura recomendada de repositório
+```text
+agente-edital-saab/
+├── README.md
+├── conhecimento/
+│   ├── BASE_CONHECIMENTO_AGENTE_EDITAL_SAAB.md
+│   ├── CHECKLIST_EDITAL.md
+│   ├── CLAUSULAS_MODELO.md
+│   ├── RESOLUCAO_CNJ_651_CONTA_VINCULADA.md
+│   ├── RESOLUCAO_CNJ_652_OBRAS_BIM.md
+│   └── CASOS_DE_USO.md
+├── modelos/
+│   ├── MODELO_EDITAL_DEDICACAO_EXCLUSIVA.md
+│   ├── MODELO_EDITAL_OBRAS_BIM.md
+│   └── MODELO_ATO_DELEGACAO_CONTA_VINCULADA.md
+└── governanca/
+    ├── CONTROLE_DE_VERSOES.md
+    ├── FONTES_OFICIAIS.md
+    └── REGRAS_DE_ATUALIZACAO.md
+```
 ---
-
-## Art. 3º – Controle e Transparência
-Os processos de abertura, movimentação e liberação das contas vinculadas deverão tramitar exclusivamente pelo **Sistema Eletrônico de Informações (SEI)**, contendo toda a documentação comprobatória e o relatório consolidado de conformidade.
-
-Parágrafo único – A SAAB e a SOF manterão sistema unificado de acompanhamento das contas, com integração futura ao **Painel de Governança SAAB-TJSP**, permitindo auditoria em tempo real.
-
+21. Controle de versões da base
+Versão	Data	Alteração	Responsável
+2025.11	2025	Consolidação inicial do Agente_EDITAL SAAB 5.3.	SAAB/SynapseNext
+2026.04.29	2026-04-29	Reorganização integral, deduplicação, atualização de cautelas normativas e separação em módulos.	Curadoria assistida por IA
+21.1. Regras para atualização futura
+Toda atualização da base deve registrar:
+data;
+fonte normativa ou documental;
+trecho alterado;
+motivo da alteração;
+impacto sobre respostas do agente;
+necessidade de revisão de prompts ou ferramentas;
+validação institucional, quando houver.
 ---
-
-## Art. 4º – Responsabilidade Institucional
-As competências ora delegadas não eximem o ordenador de despesas de sua responsabilidade administrativa e funcional, devendo cada unidade assegurar a **fiscalização suficiente** dos contratos sob sua gestão, nos termos do art. 8º da Resolução CNJ nº 651/2025.
-
+22. Comandos úteis para versionamento em Git
+```bash
+git status
+git add BASE_CONHECIMENTO_AGENTE_EDITAL_SAAB_2026_04.md
+git commit -m "docs: atualiza base de conhecimento do Agente_EDITAL SAAB"
+git push origin main
+```
+> Ajustar o nome do arquivo e a branch conforme o repositório utilizado.
 ---
-
-## Art. 5º – Vigência
-Este Ato entra em vigor na data de sua publicação, aplicando-se a todos os contratos firmados a partir de **30 de setembro de 2025**, data de início da vigência da Resolução CNJ nº 651/2025.
-
+23. Mensagem padrão do agente
+> Olá. Sou o **Agente_EDITAL – SAAB/TJSP**, assistente de apoio à elaboração, revisão e auditoria de editais de licitação. Posso analisar minutas, comparar edital e Termo de Referência, identificar pendências normativas, sugerir cláusulas e apontar riscos de conformidade. Para iniciar, envie o edital, o TR ou informe o objeto da contratação.
 ---
-
-## Art. 6º – Revogação
-Ficam revogadas disposições em contrário, especialmente atos internos anteriores que tratem de retenções trabalhistas sem observância do modelo de conta vinculada previsto pela nova resolução.
-
----
-
-**São Paulo, ___ de __________ de 2025.**
-
-**Desembargador [Nome do Presidente]**  
-Presidente do Tribunal de Justiça do Estado de São Paulo
-
-**Ciente:**  
-Secretaria de Administração e Abastecimento – SAAB  
-Secretaria de Orçamento e Finanças – SOF  
-Grupo Técnico de Apoio às Contratações – GTAJ  
-
----
-
-📎 **Anexo I – Checklist de Fiscalização Contratual (versão SAAB 5.3)**  
-📎 **Anexo II – Fluxo Operacional da Conta Vinculada (Res. CNJ 651/2025)**  
-📎 **Anexo III – Minuta Padrão de Cláusulas de Retenção e Liberação**  
-
----
-
-**Elaboração Técnica:** SAAB / SOF / GTAJ  
-**Versão:** 2025.11.11  
-**Projeto:** SynapseNext – Agente_EDITAL SAAB 5.3 (TJSP)
-
+24. Observação final
+Esta base foi estruturada para uso como conhecimento institucional do Agente_EDITAL. O conteúdo deve ser mantido em ambiente controlado, com curadoria periódica, validação normativa e alinhamento aos modelos oficiais vigentes do TJSP.
